@@ -17,4 +17,8 @@ func main() {
 		s2 string = "bye"
 	)
 	fmt.Println(i2, s2)
+
+	var i3 int
+	var s3 int
+	fmt.Println(i3, s3)
 }
