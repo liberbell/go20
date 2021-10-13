@@ -21,4 +21,8 @@ func main() {
 	var i3 int
 	var s3 string
 	fmt.Println(i3, s3)
+
+	i3 = 300
+	s3 = "awesome"
+	fmt.Println(i3, s3)
 }
