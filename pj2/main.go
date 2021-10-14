@@ -4,6 +4,11 @@ import "fmt"
 
 var i5 int = 500
 
+func outer() {
+	var s4 string = "outer"
+	fmt.Println(s4)
+}
+
 func main() {
 	var i int = 100
 	fmt.Println(i)
