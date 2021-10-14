@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+i5 := 500
+
 func main() {
 	var i int = 100
 	fmt.Println(i)
@@ -32,6 +34,8 @@ func main() {
 	i4 = 450
 	fmt.Println(i4)
 
-	i4 = "hello"
-	fmt.Println(i4)
+	// i4 = "hello"
+	// fmt.Println(i4)
+	fmt.Println(i5)
+
 }
