@@ -12,6 +12,7 @@ func main() {
 
 	var i2 int64 = 200
 	fmt.Println(reflect.TypeOf(i2))
+	fmt.Printf("Type of i2: %T\n", i2)
 	fmt.Println(i + 50)
 
 	// fmt.Println(i + i2)
