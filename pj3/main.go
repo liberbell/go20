@@ -23,4 +23,8 @@ func main() {
 	fmt.Println(fl)
 	fmt.Printf("Type of fl: %T\n", fl)
 
+	var fl32 = 1.2
+	fmt.Println(fl32)
+	fmt.Printf("Type of fl32: %T\n", fl32)
+
 }
