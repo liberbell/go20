@@ -31,4 +31,7 @@ func main() {
 	pinf := 1.0 / zero
 	fmt.Println(pinf)
 
+	ninf := -1.0 / zero
+	fmt.Println(ninf)
+
 }
