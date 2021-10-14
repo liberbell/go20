@@ -18,5 +18,5 @@ func main() {
 	fmt.Println("\"")
 	fmt.Println(`"`)
 
-	fmt.Println(s[0])
+	fmt.Println(string(s[0]))
 }
