@@ -10,4 +10,8 @@ func main() {
 	var si string = "300"
 	fmt.Println(si)
 	fmt.Printf("Type of s: %T\n", si)
+
+	fmt.Println(`test
+	test
+		test`)
 }
