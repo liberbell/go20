@@ -18,5 +18,9 @@ func main() {
 	// fmt.Println(i + i2)
 	var fl64 float64 = 2.4
 	fmt.Println(fl64)
+	fmt.Printf("Type of fl64: %T\n", fl64)
+	var fl = 3.2
+	fmt.Println(fl)
+	fmt.Printf("Type of fl: %T\n", fl)
 
 }
