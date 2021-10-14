@@ -43,4 +43,5 @@ func main() {
 	// fmt.Println(i4)
 	fmt.Println(i5)
 
+	outer()
 }
