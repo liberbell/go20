@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-i5 := 500
+var i5 int = 500
 
 func main() {
 	var i int = 100
