@@ -25,4 +25,10 @@ func main() {
 	i3 = 300
 	s3 = "awesome"
 	fmt.Println(i3, s3)
+
+	i4 := 400
+	fmt.Println(i4)
+
+	i4 = 450
+	fmt.Println(i4)
 }
