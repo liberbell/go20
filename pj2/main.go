@@ -31,4 +31,7 @@ func main() {
 
 	i4 = 450
 	fmt.Println(i4)
+
+	i4 = "hello"
+	fmt.Println(i4)
 }
