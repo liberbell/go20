@@ -18,4 +18,9 @@ func main() {
 	arr4 := [...]string{"Tomorrow", "is", "another", "day."}
 	fmt.Println(arr4)
 	fmt.Printf("Type : %T\n", arr4)
+
+	fmt.Println(arr2[1])
+
+	arr2[2] = "bad"
+	fmt.Println(arr2)
 }
