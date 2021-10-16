@@ -12,4 +12,5 @@ func main() {
 	c := []byte("HI")
 	fmt.Printf("Type is :%T\n", c)
 	fmt.Println(c)
+	fmt.Println(string(c))
 }
