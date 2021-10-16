@@ -13,5 +13,9 @@ func main() {
 
 	arr3 := [3]int{1, 2, 3}
 	fmt.Println(arr3)
-	fmt.Printf("Type : %T\n", ar3)
+	fmt.Printf("Type : %T\n", arr3)
+
+	arr4 := [...]string{"Tomorrow", "is"}
+	fmt.Println(arr4)
+	fmt.Printf("Type : %T\n", arr4)
 }
