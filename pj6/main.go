@@ -8,4 +8,8 @@ func main() {
 	fmt.Printf("%T\n", byteA[0])
 
 	fmt.Println(string(byteA))
+
+	c := []byte("HI")
+	fmt.Printf("%T", c)
+	fmt.Println(c)
 }
