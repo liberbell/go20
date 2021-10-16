@@ -15,7 +15,7 @@ func main() {
 	fmt.Println(arr3)
 	fmt.Printf("Type : %T\n", arr3)
 
-	arr4 := [...]string{"Tomorrow", "is"}
+	arr4 := [...]string{"Tomorrow", "is", "another", "day."}
 	fmt.Println(arr4)
 	fmt.Printf("Type : %T\n", arr4)
 }
