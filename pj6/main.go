@@ -10,6 +10,6 @@ func main() {
 	fmt.Println(string(byteA))
 
 	c := []byte("HI")
-	fmt.Printf("%T", c)
+	fmt.Printf("Type is :%T\n", c)
 	fmt.Println(c)
 }
