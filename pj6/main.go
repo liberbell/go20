@@ -1,5 +1,8 @@
 package main
 
+import "fmt"
+
 func main() {
-	byteA := []byte{}
+	byteA := []byte{72, 73}
+	fmt.Println(byteA)
 }
