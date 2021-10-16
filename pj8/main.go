@@ -18,4 +18,8 @@ func main() {
 	x = "Hello"
 	fmt.Println(x)
 	fmt.Printf("Type : %T\n", x)
+
+	x = [3]int{1, 2, 3}
+	fmt.Println(x)
+	fmt.Printf("Type : %T\n", x)
 }
