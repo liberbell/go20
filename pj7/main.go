@@ -24,7 +24,9 @@ func main() {
 	arr2[2] = "bad"
 	fmt.Println(arr2)
 
-	var arr5 [4]int
-	arr5 = arr1
-	fmt.Println(arr5)
+	// var arr5 [4]int
+	// arr5 = arr1
+	// fmt.Println(arr5)
+
+	fmt.Println(len(arr1))
 }
