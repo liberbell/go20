@@ -23,4 +23,7 @@ func main() {
 	s += "DEF"
 	fmt.Println(s)
 
+	s -= "DEF"
+	fmt.Println(s)
+
 }
