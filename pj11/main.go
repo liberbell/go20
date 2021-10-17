@@ -10,4 +10,9 @@ func main() {
 	fmt.Println(60 / 3)
 
 	fmt.Println(9 % 4)
+
+	n := 0
+	n += 4
+	fmt.Println(n)
+
 }
