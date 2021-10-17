@@ -25,7 +25,7 @@ func main() {
 	// fmt.Printf("Type of i3 : %T\n", i3)
 	// fmt.Println(i3)
 
-	var s string = "100"
+	var s string = "A"
 	fmt.Printf("Type of s : %T\n", s)
 	i, err := strconv.Atoi(s)
 	fmt.Println(i)
