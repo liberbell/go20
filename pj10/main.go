@@ -18,6 +18,12 @@ const (
 	F
 )
 
+const (
+	c0 = iota
+	c1
+	c2
+)
+
 func main() {
 	fmt.Println(Pi)
 
@@ -32,5 +38,7 @@ func main() {
 	const Big = 9223372036854775807 + 1
 
 	fmt.Println(Big - 1)
+
+	fmt.Println(c0, c1, c2)
 
 }
