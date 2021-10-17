@@ -30,5 +30,4 @@ func main() {
 	i, err := strconv.Atoi(s)
 	fmt.Println(i)
 	log.Println(err)
-	fmt.Printf("Type of conv i : %T\n:", i)
 }
