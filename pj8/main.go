@@ -22,4 +22,7 @@ func main() {
 	x = [3]int{1, 2, 3}
 	fmt.Println(x)
 	fmt.Printf("Type : %T\n", x)
+
+	x = 2
+	fmt.Println(x + 3)
 }
