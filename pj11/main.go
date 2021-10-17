@@ -19,4 +19,8 @@ func main() {
 	n--
 	fmt.Println(n)
 
+	s := "ABC"
+	s += "DEF"
+	fmt.Println(s)
+
 }
