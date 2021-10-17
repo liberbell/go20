@@ -28,8 +28,9 @@ func main() {
 
 	fmt.Println(A, B, C, D, E, F)
 
-	var Big int = 9223372036854775807 + 1
+	// var Big int = 9223372036854775807 + 1
+	const Big = 9223372036854775807 + 1
 
-	fmt.Println(Big)
+	fmt.Println(Big - 1)
 
 }
