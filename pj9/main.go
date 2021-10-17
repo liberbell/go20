@@ -30,4 +30,19 @@ func main() {
 	i, err := strconv.Atoi(s)
 	fmt.Println(i)
 	log.Println(err)
+
+	var i2 int = 200
+	s2 := strconv.Itoa(i2)
+	fmt.Println(s2)
+	fmt.Printf("Type of i2 : %T\n", s2)
+
+	var h string = "hello world"
+	b := []byte(h)
+	fmt.Println(b)
+	fmt.Printf("Type of h and b : %T %T\n", h, b)
+
+	h2 := string(b)
+	fmt.Println(h2)
+	fmt.Printf("Type of h2 and b : %T %T\n", h2, b)
+
 }
