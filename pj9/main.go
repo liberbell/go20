@@ -12,4 +12,8 @@ func main() {
 	i2 := int(fl64)
 	fmt.Println(i2)
 	fmt.Printf("Type of i2: %T\n", i2)
+
+	fl := 10.3
+	fmt.Printf("Type of fl : %T\n", fl)
+	fmt.Println(fl)
 }
