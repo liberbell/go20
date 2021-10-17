@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"strconv"
 )
 
@@ -26,7 +27,8 @@ func main() {
 
 	var s string = "100"
 	fmt.Printf("Type of s : %T\n", s)
-	i, _ := strconv.Atoi(s)
+	i, err := strconv.Atoi(s)
 	fmt.Println(i)
+	log.Println(err)
 	fmt.Printf("Type of conv i : %T\n:", i)
 }
