@@ -40,6 +40,6 @@ func main() {
 	fmt.Println(Big - 1)
 
 	fmt.Println(c0, c1, c2)
-	fmt.Printf("Type of c0, c1, c2 : %T, %T, %T", c0, c1, c2)
+	fmt.Printf("Type of c0, c1, c2 : %T, %T, %T\n", c0, c1, c2)
 
 }
