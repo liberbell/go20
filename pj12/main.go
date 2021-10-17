@@ -7,4 +7,6 @@ func main() {
 	fmt.Println(1 == 2)
 
 	fmt.Println(4 <= 8)
+	fmt.Println(1 >= 8)
+	fmt.Println(1 > 8)
 }
