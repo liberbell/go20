@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func Plus(x int, y int) int {
+func Plus(x, y int) int {
 	return x + y
 }
 
