@@ -15,4 +15,7 @@ func Div(x, y int) (int, int) {
 func main() {
 	sum1 := Plus(3, 10)
 	fmt.Println(sum1)
+
+	num, amari := Div(5, 2)
+	fmt.Println(num, amari)
 }
