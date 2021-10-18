@@ -9,4 +9,7 @@ func main() {
 	fmt.Println(4 <= 8)
 	fmt.Println(1 >= 8)
 	fmt.Println(1 > 8)
+
+	fmt.Println(true == false)
+	fmt.Println(true != false)
 }
