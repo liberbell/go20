@@ -19,6 +19,10 @@ func Double(price int) (result int) {
 	return
 }
 
+func Noreturn() {
+	fmt.Println("No return")
+}
+
 func main() {
 	sum1 := Plus(3, 10)
 	fmt.Println(sum1)
@@ -28,4 +32,6 @@ func main() {
 
 	p1 := Double(15)
 	fmt.Println(p1)
+
+	Noreturn()
 }
