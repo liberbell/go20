@@ -1,9 +1,13 @@
 package main
 
-func Callfunction(f func()) {
+import "fmt"
 
+func Callfunction(f func()) {
+	f()
 }
 
 func main() {
-	a
+	Callfunction(func() {
+		fmt.Println("This is inside function.")
+	})
 }
