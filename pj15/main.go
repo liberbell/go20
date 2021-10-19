@@ -10,7 +10,8 @@ func main() {
 	i := f(1, 2)
 	fmt.Println(i)
 
-	func(x, y int) int {
+	i2 := func(x, y int) int {
 		return x + y
 	}(10, 20)
+	fmt.Println(i2)
 }
