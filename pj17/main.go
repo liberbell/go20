@@ -14,6 +14,8 @@ func Later() func(string) string {
 func main() {
 	f := Later()
 	fmt.Println(f("Hello"))
-	fmt.Println(f("Hello"))
-	fmt.Println(f("Hello"))
+	fmt.Println(f("My"))
+	fmt.Println(f("Name"))
+	fmt.Println(f("is"))
+	fmt.Println(f("Lang"))
 }
