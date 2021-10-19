@@ -10,14 +10,21 @@ func integers() func() int {
 	}
 }
 func main() {
-	ints := integers()
-	fmt.Println(ints())
-	fmt.Println(ints())
-	fmt.Println(ints())
+	// ints := integers()
+	// fmt.Println(ints())
+	// fmt.Println(ints())
+	// fmt.Println(ints())
 
-	otherints := integers()
-	fmt.Println(otherints())
-	fmt.Println(otherints())
-	fmt.Println(otherints())
-	fmt.Println(otherints())
+	// otherints := integers()
+	// fmt.Println(otherints())
+	// fmt.Println(otherints())
+	// fmt.Println(otherints())
+	// fmt.Println(otherints())
+
+	a := 0
+	if a == 2 {
+		fmt.Println("Two")
+	} else {
+		fmt.Println("I don`t know.")
+	}
 }
