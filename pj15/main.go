@@ -9,4 +9,8 @@ func main() {
 
 	i := f(1, 2)
 	fmt.Println(i)
+
+	func(x, y int) int {
+		return x + y
+	}(10, 20)
 }
