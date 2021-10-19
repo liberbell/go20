@@ -21,8 +21,8 @@ func main() {
 	// fmt.Println(otherints())
 	// fmt.Println(otherints())
 
-	a := 0
-	if a == 1 {
+	a := 1
+	if a == 0 {
 		fmt.Println("Two")
 	} else if a == 1 {
 		fmt.Println("One")
@@ -33,4 +33,10 @@ func main() {
 	if b := 100; b == 100 {
 		fmt.Println("one hundred")
 	}
+
+	x := 0
+	if x := 2; true {
+		fmt.Println(x)
+	}
+	fmt.Println(x)
 }
