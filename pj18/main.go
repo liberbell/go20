@@ -22,11 +22,15 @@ func main() {
 	// fmt.Println(otherints())
 
 	a := 0
-	if a == 2 {
+	if a == 1 {
 		fmt.Println("Two")
 	} else if a == 1 {
 		fmt.Println("One")
 	} else {
 		fmt.Println("I don`t know.")
+	}
+
+	if b := 100; b == 100 {
+		fmt.Println("one hundred")
 	}
 }
