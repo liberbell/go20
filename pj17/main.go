@@ -7,7 +7,7 @@ func Later() func(string) string {
 	return func(next string) string {
 		s := store
 		store = next
-		return
+		return s
 	}
 }
 
