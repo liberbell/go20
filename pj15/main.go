@@ -2,16 +2,22 @@ package main
 
 import "fmt"
 
-func main() {
-	f := func(x, y int) int {
-		return x + y
+func Returnfunc() func() {
+	return func() {
+		fmt.Println("This is inside function.")
 	}
+}
 
-	i := f(1, 2)
-	fmt.Println(i)
+func main() {
+	// f := func(x, y int) int {
+	// 	return x + y
+	// }
 
-	i2 := func(x, y int) int {
-		return x + y
-	}(10, 20)
-	fmt.Println(i2)
+	// i := f(1, 2)
+	// fmt.Println(i)
+
+	// i2 := func(x, y int) int {
+	// 	return x + y
+	// }(10, 20)
+	// fmt.Println(i2)
 }
