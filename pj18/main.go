@@ -14,4 +14,10 @@ func main() {
 	fmt.Println(ints())
 	fmt.Println(ints())
 	fmt.Println(ints())
+
+	otherints := integers()
+	fmt.Println(otherints())
+	fmt.Println(otherints())
+	fmt.Println(otherints())
+	fmt.Println(otherints())
 }
