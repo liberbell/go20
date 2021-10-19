@@ -1,10 +1,17 @@
 package main
 
+import "fmt"
+
 func Later() func(string) string {
 	var store string
-	return
+	return func(next string) string {
+		s := store
+		store = next
+		return
+	}
 }
 
 func main() {
-	a
+	f := Later()
+	fmt.Println(f("Hello"))
 }
