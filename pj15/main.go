@@ -21,6 +21,7 @@ func main() {
 	// }(10, 20)
 	// fmt.Println(i2)
 
-	f := Returnfunc()
-	f()
+	// f := Returnfunc()
+	// f()
+	Returnfunc()
 }
