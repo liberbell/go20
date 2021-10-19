@@ -20,4 +20,7 @@ func main() {
 	// 	return x + y
 	// }(10, 20)
 	// fmt.Println(i2)
+
+	f := Returnfunc()
+	fmt.Println(f)
 }
