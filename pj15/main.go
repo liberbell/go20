@@ -22,5 +22,5 @@ func main() {
 	// fmt.Println(i2)
 
 	f := Returnfunc()
-	fmt.Println(f)
+	f()
 }
