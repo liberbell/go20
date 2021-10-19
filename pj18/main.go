@@ -12,4 +12,6 @@ func integers() func() int {
 func main() {
 	ints := integers()
 	fmt.Println(ints())
+	fmt.Println(ints())
+	fmt.Println(ints())
 }
