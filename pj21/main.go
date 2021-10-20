@@ -13,7 +13,7 @@ func main() {
 	// 	fmt.Println("some number")
 	// }
 
-	switch n := 2, n {
+	switch n := 2; n {
 	case 1, 2:
 		fmt.Println("1 or 2")
 	case 3, 4:
