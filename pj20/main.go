@@ -21,15 +21,15 @@ func main() {
 	// 	point++
 	// }
 
-	for i := 0; i < 10; i++ {
-		if i == 3 {
-			continue
-		}
-		if i == 6 {
-			break
-		}
-		fmt.Println(i)
-	}
+	// for i := 0; i < 10; i++ {
+	// 	if i == 3 {
+	// 		continue
+	// 	}
+	// 	if i == 6 {
+	// 		break
+	// 	}
+	// 	fmt.Println(i)
+	// }
 
 	arr := [3]int{1, 2, 3}
 	for i := 0; i < len(arr); i++ {
