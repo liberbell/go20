@@ -41,8 +41,13 @@ func main() {
 	// 	fmt.Println(v)
 	// }
 
-	sl := []string{"Python", "PHP", "Go"}
-	for i, v := range sl {
-		fmt.Println(i, v)
+	// sl := []string{"Python", "PHP", "Go"}
+	// for i, v := range sl {
+	// 	fmt.Println(i, v)
+	// }
+
+	m := map[string]int{"apple": 100, "banana": 200}
+	for k, v := range m {
+		fmt.Println(k, v)
 	}
 }
