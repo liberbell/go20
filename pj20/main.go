@@ -31,8 +31,13 @@ func main() {
 	// 	fmt.Println(i)
 	// }
 
+	// arr := [3]int{1, 2, 3}
+	// for i := 0; i < len(arr); i++ {
+	// 	fmt.Println(arr[i])
+	// }
+
 	arr := [3]int{1, 2, 3}
-	for i := 0; i < len(arr); i++ {
-		fmt.Println(arr[i])
+	for _, v := range arr {
+		fmt.Println(v)
 	}
 }
