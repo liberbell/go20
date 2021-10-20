@@ -8,8 +8,8 @@ import (
 func main() {
 	i := 0
 	for {
-		fmt.Printf("Loop %s\n", i)
-		time.Sleep(1)
+		fmt.Printf("Loop %d\n", i)
+		time.Sleep(time.Millisecond * 10)
 		i++
 	}
 }
