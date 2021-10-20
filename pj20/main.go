@@ -15,9 +15,13 @@ func main() {
 	// 	}
 	// }
 
-	point := 0
-	for point < 10 {
-		fmt.Println(point)
-		point++
+	// point := 0
+	// for point < 10 {
+	// 	fmt.Println(point)
+	// 	point++
+	// }
+
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
 	}
 }
