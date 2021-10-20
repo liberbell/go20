@@ -11,5 +11,8 @@ func main() {
 		fmt.Printf("Loop %d\n", i)
 		time.Sleep(time.Millisecond * 10)
 		i++
+		if i == 100 {
+			break
+		}
 	}
 }
