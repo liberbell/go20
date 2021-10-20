@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	var s string = "100"
+	var s string = "ABC"
 
 	i, err := strconv.Atoi(s)
 	if err != nil {
