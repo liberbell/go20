@@ -36,8 +36,13 @@ func main() {
 	// 	fmt.Println(arr[i])
 	// }
 
-	arr := [3]int{1, 2, 3}
-	for _, v := range arr {
-		fmt.Println(v)
+	// arr := [3]int{1, 2, 3}
+	// for _, v := range arr {
+	// 	fmt.Println(v)
+	// }
+
+	sl := []string{"Python", "PHP", "Go"}
+	for i, v := range sl {
+		fmt.Println(i, v)
 	}
 }
