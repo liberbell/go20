@@ -25,6 +25,9 @@ func main() {
 		if i == 3 {
 			continue
 		}
+		if i == 6 {
+			break
+		}
 		fmt.Println(i)
 	}
 }
