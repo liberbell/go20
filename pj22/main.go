@@ -12,5 +12,6 @@ func main() {
 
 	var x interface{} = 3
 	i := x.(int)
+	// fmt.Println(x + i)
 	fmt.Println(i + 1)
 }
