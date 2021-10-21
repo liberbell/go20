@@ -3,11 +3,12 @@ package main
 import "fmt"
 
 func main() {
+Loop:
 	for {
 		for {
 			for {
 				fmt.Println("START")
-				break
+				break Loop
 			}
 			fmt.Println("Don`t operate 1")
 		}
