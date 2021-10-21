@@ -36,4 +36,11 @@ func main() {
 	default:
 		fmt.Println("Unknown type")
 	}
+
+	switch v := x.(type) {
+	case bool:
+		fmt.Println(v, "bool")
+	case int:
+		fmt.Println(v, "int")
+	}
 }
