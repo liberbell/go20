@@ -14,4 +14,7 @@ func main() {
 	i := x.(int)
 	// fmt.Println(x + i)
 	fmt.Println(i + 1)
+
+	f, isFloat64 := x.(float64)
+	fmt.Println(f, isFloat64)
 }
