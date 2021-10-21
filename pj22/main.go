@@ -17,4 +17,12 @@ func main() {
 
 	f, isFloat64 := x.(float64)
 	fmt.Println(f, isFloat64)
+
+	if x == nil {
+		fmt.Println("none")
+	} else if i, isInt := x.(int); isInt{
+		fmt.Println(i, "x is int")
+	} else if s, isString {
+		fmt.Println()
+	}
 }
