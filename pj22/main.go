@@ -10,13 +10,13 @@ func main() {
 	anything("aaa")
 	anything(1)
 
-	var x interface{} = 3
-	i := x.(int)
-	// fmt.Println(x + i)
-	fmt.Println(i + 1)
+	var x interface{} = 3.14
+	// i := x.(int)
+	// // fmt.Println(x + i)
+	// fmt.Println(i + 1)
 
-	f, isFloat64 := x.(float64)
-	fmt.Println(f, isFloat64)
+	// f, isFloat64 := x.(float64)
+	// fmt.Println(f, isFloat64)
 
 	if x == nil {
 		fmt.Println("none")
