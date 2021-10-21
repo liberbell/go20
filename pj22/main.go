@@ -23,6 +23,6 @@ func main() {
 	} else if i, isInt := x.(int); isInt {
 		fmt.Println(i, "x is int")
 	} else if s, isString := x.(string); isString {
-		fmt.Println()
+		fmt.Println(s, "x is string")
 	}
 }
