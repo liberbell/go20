@@ -27,4 +27,13 @@ func main() {
 	} else {
 		fmt.Println("type is known")
 	}
+
+	switch x.(type) {
+	case int:
+		fmt.Println("int")
+	case string:
+		fmt.Println("string")
+	default:
+		fmt.Println("Unknown type")
+	}
 }
