@@ -42,5 +42,7 @@ func main() {
 		fmt.Println(v, "bool")
 	case int:
 		fmt.Println(v, "int")
+	case string:
+		fmt.Println(v, "string")
 	}
 }
