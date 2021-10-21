@@ -3,7 +3,14 @@ package main
 import "fmt"
 
 func anything(a interface{}) {
-	fmt.Println(a)
+	// fmt.Println(a)
+	switch v := a.(type) {
+	case string:
+		fmt.Println(v, "!?")
+	case int:
+		fmt.Println(v + 1000)
+	}
+
 }
 
 func main() {
