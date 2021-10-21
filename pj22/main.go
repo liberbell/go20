@@ -24,5 +24,7 @@ func main() {
 		fmt.Println(i, "x is int")
 	} else if s, isString := x.(string); isString {
 		fmt.Println(s, "x is string")
+	} else {
+		fmt.Println("type is known")
 	}
 }
