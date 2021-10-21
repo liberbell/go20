@@ -20,9 +20,9 @@ func main() {
 
 	if x == nil {
 		fmt.Println("none")
-	} else if i, isInt := x.(int); isInt{
+	} else if i, isInt := x.(int); isInt {
 		fmt.Println(i, "x is int")
-	} else if s, isString {
+	} else if s, isString := x.(string); isString {
 		fmt.Println()
 	}
 }
