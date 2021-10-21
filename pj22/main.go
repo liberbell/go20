@@ -10,7 +10,7 @@ func main() {
 	anything("aaa")
 	anything(1)
 
-	var x interface{} = "ABC"
+	var x interface{} = true
 	// i := x.(int)
 	// // fmt.Println(x + i)
 	// fmt.Println(i + 1)
