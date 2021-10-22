@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+	"os"
+)
 
 func TestDefer() {
 	defer fmt.Println("END")
@@ -16,11 +20,16 @@ func RunDefer() {
 func main() {
 	TestDefer()
 
-	defer func() {
-		fmt.Println("1")
-		fmt.Println("2")
-		fmt.Println("3")
-	}()
+	// defer func() {
+	// 	fmt.Println("1")
+	// 	fmt.Println("2")
+	// 	fmt.Println("3")
+	// }()
 
-	RunDefer()
+	// RunDefer()
+
+	file, err := os.Create("test.txt")
+	if err != nil {
+		log.Println(err)
+	}
 }
