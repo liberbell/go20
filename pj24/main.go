@@ -4,7 +4,13 @@ import "fmt"
 
 func TestDefer() {
 	defer fmt.Println("END")
+	fmt.Println("START")
 }
 func main() {
-	a
+	TestDefer()
+
+	defer func()  {
+		fmt.Println("1")
+		fmt.Println("2")
+	}
 }
