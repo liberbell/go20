@@ -21,4 +21,6 @@ func main() {
 		fmt.Println("2")
 		fmt.Println("3")
 	}()
+
+	RunDefer()
 }
