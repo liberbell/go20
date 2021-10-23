@@ -14,4 +14,7 @@ func main() {
 
 	sl4 := make([]int, 5)
 	fmt.Println(sl4)
+
+	sl2[0] = 1000
+	fmt.Println(sl2)
 }
