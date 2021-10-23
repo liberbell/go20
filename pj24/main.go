@@ -32,4 +32,6 @@ func main() {
 	if err != nil {
 		log.Println(err)
 	}
+	defer file.Close()
+	file.Write([]byte("hello"))
 }
