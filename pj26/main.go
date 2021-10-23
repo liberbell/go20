@@ -13,7 +13,7 @@ func sub() {
 }
 
 func main() {
-	sub()
+	go sub()
 
 	for {
 		fmt.Println("Main Loop")
