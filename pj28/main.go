@@ -22,5 +22,7 @@ func main() {
 	fmt.Println(sl5)
 	fmt.Println(sl5[1])
 	fmt.Println(sl5[2:4])
+	fmt.Println(sl5[:2])
+	fmt.Println(sl5[2:])
 
 }
