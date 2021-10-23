@@ -14,6 +14,7 @@ func sub() {
 
 func main() {
 	go sub()
+	go sub()
 
 	for {
 		fmt.Println("Main Loop")
