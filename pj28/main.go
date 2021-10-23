@@ -11,4 +11,7 @@ func main() {
 
 	sl3 := []string{"A", "B"}
 	fmt.Println(sl3)
+
+	sl4 := make([]int, 5)
+	fmt.Println(sl4)
 }
