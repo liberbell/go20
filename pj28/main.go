@@ -20,5 +20,7 @@ func main() {
 
 	sl5 := []int{1, 2, 3, 4, 5}
 	fmt.Println(sl5)
+	fmt.Println(sl5[1])
+	fmt.Println(sl5[2:4])
 
 }
