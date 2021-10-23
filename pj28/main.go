@@ -17,4 +17,8 @@ func main() {
 
 	sl2[0] = 1000
 	fmt.Println(sl2)
+
+	sl5 := []int{1, 2, 3, 4, 5}
+	fmt.Println(sl5)
+
 }
