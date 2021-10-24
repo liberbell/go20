@@ -16,4 +16,7 @@ func main() {
 		3: "C",
 	}
 	fmt.Println(m3)
+
+	m4 := make(map[int]string)
+	fmt.Println(m4)
 }
