@@ -19,10 +19,10 @@ func main() {
 	// fmt.Println(i2)
 
 	sl := []int{1, 2, 3, 4, 5}
+	fmt.Println(sl)
 	sl2 := make([]int, 5, 10)
 	n := copy(sl2, sl)
 
-	fmt.Println(sl)
 	fmt.Println(sl2)
 	fmt.Println(n)
 }
