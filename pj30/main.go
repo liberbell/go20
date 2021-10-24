@@ -11,4 +11,10 @@ func main() {
 	sl2[0] = 500
 	fmt.Println(sl)
 	fmt.Println(sl2)
+
+	var i int = 10
+	i2 := i
+	i2 = 100
+	fmt.Println(i)
+	fmt.Println(i2)
 }
