@@ -24,4 +24,6 @@ func main() {
 	m4[2] = "USA"
 	fmt.Println(m4)
 
+	fmt.Println(m["A"])
+
 }
