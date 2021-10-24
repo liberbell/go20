@@ -25,5 +25,6 @@ func main() {
 	fmt.Println(m4)
 
 	fmt.Println(m["A"])
+	fmt.Println(m4[2])
 
 }
