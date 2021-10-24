@@ -34,4 +34,10 @@ func main() {
 	}
 	fmt.Println(s, ok)
 
+	m4[2] = "US"
+	fmt.Println(m4)
+
+	m4[3] = "CHINA"
+	fmt.Println(m4)
+
 }
