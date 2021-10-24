@@ -11,4 +11,7 @@ func main() {
 
 	sl = append(sl, 400, 500, 600)
 	fmt.Println(sl)
+
+	sl2 := make([]int, 5)
+	fmt.Println(sl2)
 }
