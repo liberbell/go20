@@ -26,5 +26,12 @@ func main() {
 
 	fmt.Println(m["A"])
 	fmt.Println(m4[2])
+	fmt.Println(m4[3])
+
+	s, ok := m4[3]
+	if !ok {
+		fmt.Println("Error")
+	}
+	fmt.Println(s, ok)
 
 }
