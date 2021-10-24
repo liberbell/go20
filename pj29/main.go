@@ -14,4 +14,6 @@ func main() {
 
 	sl2 := make([]int, 5)
 	fmt.Println(sl2)
+
+	fmt.Println(len(sl2))
 }
