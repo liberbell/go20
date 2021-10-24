@@ -19,4 +19,9 @@ func main() {
 
 	m4 := make(map[int]string)
 	fmt.Println(m4)
+
+	m4[1] = "JAPAN"
+	m4[2] = "USA"
+	fmt.Println(m4)
+
 }
