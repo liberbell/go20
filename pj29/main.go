@@ -8,4 +8,7 @@ func main() {
 
 	sl = append(sl, 300)
 	fmt.Println(sl)
+
+	sl = append(sl, 400, 500, 600)
+	fmt.Println(sl)
 }
