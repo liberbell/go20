@@ -40,4 +40,7 @@ func main() {
 	m4[3] = "CHINA"
 	fmt.Println(m4)
 
+	delete(m4, 3)
+	fmt.Println(m4)
+
 }
