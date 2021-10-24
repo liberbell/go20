@@ -17,4 +17,10 @@ func main() {
 
 	fmt.Println(len(sl2))
 	fmt.Println(cap(sl2))
+
+	sl3 := make([]int, 5, 10)
+	fmt.Println(sl3)
+
+	fmt.Println(len(sl3))
+	fmt.Println(cap(sl3))
 }
