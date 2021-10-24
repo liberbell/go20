@@ -12,4 +12,6 @@ func Sum(s ...int) int {
 
 func main() {
 	fmt.Println(Sum(1, 2, 3))
+
+	fmt.Println(Sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
 }
