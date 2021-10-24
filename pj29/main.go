@@ -23,4 +23,8 @@ func main() {
 
 	fmt.Println(len(sl3))
 	fmt.Println(cap(sl3))
+
+	sl3 = append(sl3, 1, 2, 3, 4, 5, 6, 7)
+	fmt.Println(len(sl3))
+	fmt.Println(cap(sl3))
 }
