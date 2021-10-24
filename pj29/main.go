@@ -16,4 +16,5 @@ func main() {
 	fmt.Println(sl2)
 
 	fmt.Println(len(sl2))
+	fmt.Println(cap(sl2))
 }
