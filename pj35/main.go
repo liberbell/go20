@@ -13,4 +13,7 @@ func main() {
 
 	fmt.Println(cap(ch1))
 	fmt.Println(cap(ch2))
+
+	ch3 := make(chan int, 5)
+	fmt.Println(cap(ch3))
 }
