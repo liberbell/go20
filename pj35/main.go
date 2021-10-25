@@ -19,5 +19,9 @@ func main() {
 
 	ch3 <- 1
 	fmt.Println(len(ch3))
-	fmt.Println(byte(ch3))
+	// fmt.Println(byte(ch3))
+
+	ch3 <- 2
+	ch3 <- 3
+	fmt.Println(cap(ch3))
 }
