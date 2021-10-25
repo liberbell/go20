@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var ch1 chan int
+	// var ch1 chan int
 
 	// var ch2 <-chan int
 	// var ch3 chan<- int
@@ -23,5 +23,5 @@ func main() {
 
 	ch3 <- 2
 	ch3 <- 3
-	fmt.Println(cap(ch3))
+	fmt.Println(len(ch3))
 }
