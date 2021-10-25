@@ -16,4 +16,8 @@ func main() {
 
 	ch3 := make(chan int, 5)
 	fmt.Println(cap(ch3))
+
+	ch3 <- 1
+	fmt.Println(len(ch3))
+	fmt.Println(ch3)
 }
