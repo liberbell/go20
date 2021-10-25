@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	var ch1 chan int
 
@@ -9,6 +11,6 @@ func main() {
 	ch1 = make(chan int)
 	ch2 := make(chan int)
 
-	fmt.println(cap(ch1))
-	fmt.println(cap(ch2))
+	fmt.Println(cap(ch1))
+	fmt.Println(cap(ch2))
 }
