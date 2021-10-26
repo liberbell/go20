@@ -8,6 +8,7 @@ func reveiver(name string, ch chan int) {
 		if !ok {
 			break
 		}
+		fmt.Println(name, i)
 	}
 }
 
@@ -26,4 +27,6 @@ func main() {
 	fmt.Println(i, ok)
 	i2, ok := <-ch1
 	fmt.Println(i2, ok)
+
+	reveiver("abc", 10)
 }
