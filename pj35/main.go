@@ -24,4 +24,11 @@ func main() {
 	ch3 <- 2
 	ch3 <- 3
 	fmt.Println(len(ch3))
+
+	i := <-ch3
+	fmt.Println(i)
+	i2 := <-ch3
+	fmt.Println(i2)
+	i3 := <-ch3
+	fmt.Println(i3)
 }
