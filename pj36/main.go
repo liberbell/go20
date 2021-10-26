@@ -15,4 +15,7 @@ func main() {
 	ch2 := make(chan int)
 	// fmt.Println(<-ch1)
 
+	go reciever(ch1)
+	go reciever(ch2)
+
 }
