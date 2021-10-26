@@ -12,6 +12,7 @@ func reciever(c chan int) {
 
 func main() {
 	ch1 := make(chan int)
+	ch2 := make(chan int)
 	// fmt.Println(<-ch1)
 
 }
