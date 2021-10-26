@@ -30,4 +30,13 @@ func main() {
 	// fmt.Println(i2, ok)
 
 	go reveiver("A", ch1)
+	go reveiver("B", ch1)
+	go reveiver("C", ch1)
+
+	i := 0
+	for i < 100 {
+		ch1 <- i
+		i++
+	}
+	close(ch1)
 }
