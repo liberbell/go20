@@ -2,6 +2,15 @@ package main
 
 import "fmt"
 
+func reveiver(name string, ch chan int) {
+	for {
+		i, ok := <-ch
+		if !ok {
+			break
+		}
+	}
+}
+
 func main() {
 	ch1 := make(chan int, 2)
 
