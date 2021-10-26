@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func reveiver(name string, ch chan int) {
 	for {
@@ -39,4 +42,5 @@ func main() {
 		i++
 	}
 	close(ch1)
+	time.Sleep(3 * time.Second)
 }
