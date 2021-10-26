@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func reciever(c chan int) {
 	for {
@@ -17,5 +20,13 @@ func main() {
 
 	go reciever(ch1)
 	go reciever(ch2)
+
+	i := 0
+	for i < 100 {
+		ch1 <- i
+		ch2 <- i
+		time.Sleep(500 * time.Millisecond)
+		i++
+	}
 
 }
