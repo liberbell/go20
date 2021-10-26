@@ -25,7 +25,7 @@ func main() {
 	for i < 100 {
 		ch1 <- i
 		ch2 <- i
-		time.Sleep(500 * time.Millisecond)
+		time.Sleep(50 * time.Millisecond)
 		i++
 	}
 
