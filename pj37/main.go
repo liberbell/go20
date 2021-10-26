@@ -10,23 +10,24 @@ func reveiver(name string, ch chan int) {
 		}
 		fmt.Println(name, i)
 	}
+	fmt.Println(name + " END")
 }
 
 func main() {
 	ch1 := make(chan int, 2)
 
-	ch1 <- 1
-	close(ch1)
+	// ch1 <- 1
+	// close(ch1)
 	// ch1 <- 2
 
 	// i := <-ch1
 	// fmt.Println(i)
 	// ch1 <- 1
 
-	i, ok := <-ch1
-	fmt.Println(i, ok)
-	i2, ok := <-ch1
-	fmt.Println(i2, ok)
+	// i, ok := <-ch1
+	// fmt.Println(i, ok)
+	// i2, ok := <-ch1
+	// fmt.Println(i2, ok)
 
-	reveiver("abc", 10)
+	go reveiver("A", ch1)
 }
