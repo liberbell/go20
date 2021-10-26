@@ -33,8 +33,10 @@ func main() {
 	fmt.Println("len third", len(ch3), i3)
 
 	ch3 <- 1
+	fmt.Println(<-ch3)
 	ch3 <- 2
 	ch3 <- 3
 	ch3 <- 4
 	ch3 <- 5
+	ch3 <- 6
 }
