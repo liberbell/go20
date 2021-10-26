@@ -30,5 +30,11 @@ func main() {
 	i2 := <-ch3
 	fmt.Println("len second", len(ch3), i2)
 	i3 := <-ch3
-	fmt.Println("len third", len(ch3) i3)
+	fmt.Println("len third", len(ch3), i3)
+
+	ch3 <- 1
+	ch3 <- 2
+	ch3 <- 3
+	ch3 <- 4
+	ch3 <- 5
 }
