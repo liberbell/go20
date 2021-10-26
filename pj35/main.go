@@ -26,9 +26,9 @@ func main() {
 	fmt.Println(len(ch3))
 
 	i := <-ch3
-	fmt.Println(i)
+	fmt.Println("len first", len(ch3), i)
 	i2 := <-ch3
-	fmt.Println(i2)
+	fmt.Println("len second", len(ch3), i2)
 	i3 := <-ch3
-	fmt.Println(i3)
+	fmt.Println("len third", len(ch3) i3)
 }
