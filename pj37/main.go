@@ -15,4 +15,6 @@ func main() {
 
 	i, ok := <-ch1
 	fmt.Println(i, ok)
+	i2, ok := <-ch1
+	fmt.Println(i2, ok)
 }
