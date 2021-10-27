@@ -51,4 +51,14 @@ func main() {
 			ch5 <- i2 - 1
 		}
 	}()
+
+	n := 0
+	for {
+		select {
+		case ch3 <- n:
+			n++
+		case i3 <- ch5:
+			fmt.Println("Receved : ", i3)
+		}
+	}
 }
