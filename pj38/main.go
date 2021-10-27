@@ -53,6 +53,7 @@ func main() {
 	}()
 
 	n := 0
+Loop1:
 	for {
 		select {
 		case ch3 <- n:
@@ -61,7 +62,7 @@ func main() {
 			fmt.Println("Receved : ", i3)
 		default:
 			if n > 100 {
-				break
+				break Loop1
 			}
 		}
 		// if n > 100 {
