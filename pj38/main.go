@@ -57,7 +57,7 @@ func main() {
 		select {
 		case ch3 <- n:
 			n++
-		case i3 <- ch5:
+		case i3 := <-ch5:
 			fmt.Println("Receved : ", i3)
 		}
 		if n > 100 {
