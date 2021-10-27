@@ -59,9 +59,13 @@ func main() {
 			n++
 		case i3 := <-ch5:
 			fmt.Println("Receved : ", i3)
+		default:
+			if n > 100 {
+				break
+			}
 		}
-		if n > 100 {
-			break
-		}
+		// if n > 100 {
+		// 	break
+		// }
 	}
 }
