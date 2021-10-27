@@ -37,4 +37,18 @@ func main() {
 	ch3 := make(chan int)
 	ch4 := make(chan int)
 	ch5 := make(chan int)
+
+	go func() {
+		for {
+			i := <-ch3
+			ch4 <- i * 2
+		}
+	}()
+
+	go func() {
+		for {
+			i2 := <-ch4
+			ch5 <- i2 - 1
+		}
+	}()
 }
