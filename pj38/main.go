@@ -60,5 +60,8 @@ func main() {
 		case i3 <- ch5:
 			fmt.Println("Receved : ", i3)
 		}
+		if n > 100 {
+			break
+		}
 	}
 }
