@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// ch1 := make(chan int, 3)
 	// ch1 <- 1
@@ -13,4 +15,10 @@ func main() {
 
 	ch1 := make(chan int, 2)
 	ch2 := make(chan string, 2)
+
+	ch2 <- "A"
+
+	v1 := <-ch1
+	v2 := <-ch2
+	fmt.Println(v1, v2)
 }
