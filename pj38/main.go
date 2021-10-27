@@ -17,6 +17,9 @@ func main() {
 	ch2 := make(chan string, 2)
 
 	ch2 <- "A"
+	ch1 <- 1
+	ch2 <- "B"
+	ch1 <- 2
 
 	// v1 := <-ch1
 	// v2 := <-ch2
