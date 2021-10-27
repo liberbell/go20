@@ -33,4 +33,8 @@ func main() {
 	default:
 		fmt.Println("unknown")
 	}
+
+	ch3 := make(chan int)
+	ch4 := make(chan int)
+	ch5 := make(chan int)
 }
