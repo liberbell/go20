@@ -7,6 +7,16 @@ type User struct {
 	Age  int
 }
 
+func UserUpdate(user User) {
+	user.Name = "nobody"
+	user.Age = 99
+}
+
+func UserUpdate2(user *User) {
+	user.Name = "nemo"
+	user.Age = 999
+}
+
 func main() {
 	var user1 User
 	user1.Name = "Bob"
@@ -43,4 +53,5 @@ func main() {
 
 	user8 := &User{}
 	fmt.Println(user8)
+
 }
