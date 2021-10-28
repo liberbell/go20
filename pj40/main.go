@@ -40,4 +40,7 @@ func main() {
 	fmt.Println(user7)
 	fmt.Println("Name: ", user7.Name)
 	fmt.Println("Age: ", user7.Age)
+
+	user8 := &User{}
+	fmt.Println(user8)
 }
