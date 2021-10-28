@@ -23,4 +23,8 @@ func main() {
 	user3 := User{Name: "Jhon", Age: 30}
 	fmt.Println("Name: ", user3.Name)
 	fmt.Println("Age: ", user3.Age)
+
+	user4 := User{"Elton", 40}
+	fmt.Println("Name: ", user4.Name)
+	fmt.Println("Age: ", user4.Age)
 }
