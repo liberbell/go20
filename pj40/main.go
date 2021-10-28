@@ -27,4 +27,8 @@ func main() {
 	user4 := User{"Elton", 40}
 	fmt.Println("Name: ", user4.Name)
 	fmt.Println("Age: ", user4.Age)
+
+	// user5 = User{50, "Sting"}
+	// fmt.Println("Name: ", user5.Name)
+	// fmt.Println("Age: ", user5.Age)
 }
