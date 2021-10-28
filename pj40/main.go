@@ -9,5 +9,5 @@ type User struct {
 
 func main() {
 	var user1 User
-	fmt.Println(user1)
+	fmt.Println(user1.Name, user1.Age)
 }
