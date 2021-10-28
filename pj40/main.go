@@ -32,7 +32,7 @@ func main() {
 	// fmt.Println("Name: ", user5.Name)
 	// fmt.Println("Age: ", user5.Age)
 
-	user6 := User{"Kate"}
+	user6 := User{Name: "Kate"}
 	fmt.Println("Name: ", user6.Name)
 	fmt.Println("Age: ", user6.Age)
 }
