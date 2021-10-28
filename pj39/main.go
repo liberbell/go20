@@ -23,13 +23,15 @@ func main() {
 	fmt.Println(p)
 	fmt.Println(*p)
 
-	*p = 300
-	fmt.Println(n)
-	n = 200
-	fmt.Println(*p)
+	// *p = 300
+	// fmt.Println(n)
+	// n = 200
+	// fmt.Println(*p)
 
 	DoubleV2(&n)
 	fmt.Println("original: ", n)
 	fmt.Println("Pointer: ", *p)
+
+	var sl []int = []int{1, 2, 3}
 
 }
