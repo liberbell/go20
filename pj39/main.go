@@ -28,7 +28,8 @@ func main() {
 	n = 200
 	fmt.Println(*p)
 
-	DoubleV2(n)
-	fmt.Println(n)
+	DoubleV2(p)
+	fmt.Println("original: ", n)
+	fmt.Println("Pointer: ", *p)
 
 }
