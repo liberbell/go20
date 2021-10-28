@@ -6,6 +6,10 @@ func Double(i int) {
 	i = i * 2
 }
 
+func DoubleV2(i *int) {
+	*i = *i * 2
+}
+
 func main() {
 	var n int = 100
 	fmt.Println(n)
