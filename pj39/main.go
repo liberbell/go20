@@ -10,6 +10,12 @@ func DoubleV2(i *int) {
 	*i = *i * 2
 }
 
+func DoubleV3(s []int) {
+	for i, v := range s {
+		s[i] = v * 2
+	}
+}
+
 func main() {
 	var n int = 100
 	fmt.Println(n)
@@ -33,5 +39,8 @@ func main() {
 	fmt.Println("Pointer: ", *p)
 
 	var sl []int = []int{1, 2, 3}
+
+	DoubleV3(sl)
+	fmt.Println(sl)
 
 }
