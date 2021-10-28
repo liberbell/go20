@@ -17,4 +17,11 @@ func main() {
 
 	var p *int = &n
 	fmt.Println(p)
+	fmt.Println(*p)
+
+	*p = 300
+	fmt.Println(n)
+	n = 200
+	fmt.Println(*p)
+
 }
