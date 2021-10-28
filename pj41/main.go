@@ -12,5 +12,6 @@ func (u User) SayName() {
 }
 
 func main() {
-	a
+	user1 := User{Name: "Bob"}
+	user1.SayName()
 }
