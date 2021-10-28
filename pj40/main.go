@@ -54,4 +54,10 @@ func main() {
 	user8 := &User{}
 	fmt.Println(user8)
 
+	UserUpdate(user1)
+	UserUpdate2(user8)
+
+	fmt.Println(user1)
+	fmt.Println(user8)
+
 }
