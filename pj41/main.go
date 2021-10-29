@@ -28,4 +28,8 @@ func main() {
 
 	user1.SetName2("Jhon")
 	user1.SayName()
+
+	user2 := &User{Name: "ringo"}
+	user2.SetName2("George")
+	user2.SayName()
 }
