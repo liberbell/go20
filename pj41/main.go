@@ -15,10 +15,17 @@ func (u User) SetName(name string) {
 	u.Name = name
 }
 
+func (u *User) SetName2(name string) {
+	u.Name = name
+}
+
 func main() {
 	user1 := User{Name: "Bob"}
 	user1.SayName()
 
 	user1.SetName("Eric")
+	user1.SayName()
+
+	user1.SetName2("Jhon")
 	user1.SayName()
 }
