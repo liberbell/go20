@@ -24,4 +24,6 @@ func main() {
 
 	m3 := make(map[int]User)
 	fmt.Println(m3)
+	m3[1] = User{Name: "Ringo", Age: 40}
+	fmt.Println(m3)
 }
