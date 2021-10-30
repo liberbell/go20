@@ -21,4 +21,7 @@ func main() {
 		{Name: "Jhon", Age: 20}: "Manchester",
 	}
 	fmt.Println(m2)
+
+	m3 := make(map[int]User)
+	fmt.Println(m3)
 }
