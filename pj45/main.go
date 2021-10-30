@@ -1,7 +1,11 @@
 package main
 
+import "fmt"
+
 type Myint int
 
 func main() {
-	a
+	var mi Myint
+	fmt.Println(mi)
+	fmt.Printf("%T\n", mi)
 }
