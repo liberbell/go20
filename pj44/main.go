@@ -26,4 +26,8 @@ func main() {
 	fmt.Println(m3)
 	m3[1] = User{Name: "Ringo", Age: 40}
 	fmt.Println(m3)
+
+	for _, v := range m {
+		fmt.Println(v)
+	}
 }
