@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type User struct {
 	Name string
 	Age  int
@@ -12,4 +14,11 @@ func main() {
 		3: {Name: "George", Age: 30},
 		4: {Name: "Ringo", Age: 40},
 	}
+	fmt.Println(m)
+
+	m2 := map[User]string{
+		{Name: "Poul", Age: 10}: "London",
+		{Name: "Jhon", Age: 20}: "Manchester",
+	}
+	fmt.Println(m2)
 }
