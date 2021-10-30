@@ -20,4 +20,7 @@ func main() {
 	users = append(users, &user2)
 	users = append(users, &user3, &user4)
 	fmt.Println(users)
+	for _, u := range users {
+		fmt.Println(*u)
+	}
 }
