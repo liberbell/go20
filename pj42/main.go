@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type T struct {
 	User User
 }
@@ -26,5 +28,9 @@ func main() {
 
 	// t.User.SetName()
 	// fmt.Println(t)
+
+	user1 := NewUser("user1", 10)
+	fmt.Println(user1)
+	fmt.Println(*user1)
 
 }
