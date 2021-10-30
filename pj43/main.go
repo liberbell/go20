@@ -9,6 +9,8 @@ type User struct {
 
 type Users []*User
 
+type 
+
 func main() {
 	user1 := User{Name: "Bob", Age: 10}
 	user2 := User{Name: "Eric", Age: 20}
@@ -23,4 +25,7 @@ func main() {
 	for _, u := range users {
 		fmt.Println(*u)
 	}
+
+	users2 := make([]*User, 0)
+	users2 = append(users2, &user1, &user2, &user3, &user4)
 }
