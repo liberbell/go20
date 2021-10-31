@@ -18,4 +18,6 @@ func RaiseError() error {
 func main() {
 	err := RaiseError()
 	fmt.Println(err.Error())
+
+	fmt.Println(err.Messageß)
 }
