@@ -16,6 +16,10 @@ type Car struct {
 	Model  string
 }
 
+func (c *Car) ToString() string {
+	return fmt.Sprintf("Number = %v, Model = %v", c.Number, c.Model)
+}
+
 func main() {
 	a
 }
