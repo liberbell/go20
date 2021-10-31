@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type MyError struct {
 	Message string
 	ErrCode int
@@ -14,5 +16,6 @@ func RaiseError() error {
 }
 
 func main() {
-
+	err := RaiseError()
+	fmt.Println(err.Error())
 }
