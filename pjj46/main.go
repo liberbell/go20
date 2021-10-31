@@ -27,6 +27,10 @@ func (c *Car) ToString() string {
 func main() {
 	vs := []Stringfy{
 		&Person{Name: "Jhon", Age: 10},
-		&Car{Number: "12-34", Model: "Lexas",}
+		&Car{Number: "12-34", Model: "Lexas"},
+	}
+
+	for _, v := range vs {
+		fmt.Println(v.ToString())
 	}
 }
