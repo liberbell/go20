@@ -25,7 +25,7 @@ func (c *Car) ToString() string {
 }
 
 func main() {
-	vs := []Stringfy {
+	vs := []Stringfy{
 		&Person{Name: "Jhon", Age: 10}
 	}
 }
