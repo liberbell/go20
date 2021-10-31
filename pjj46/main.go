@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+type Stringfy interface {
+	ToString() string
+}
+
 type Person struct {
 	Name string
 	Age  int
