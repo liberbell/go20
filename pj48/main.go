@@ -12,7 +12,7 @@ type Point struct {
 }
 
 func (p *Point) String() string {
-	return fmt.Sprintf("<<%v, %v", p.A, p.B)
+	return fmt.Sprintf("<<%v, %v>>", p.A, p.B)
 }
 
 func main() {
