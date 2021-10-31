@@ -13,6 +13,9 @@ func main() {
 	fmt.Println(mi)
 	fmt.Printf("%T\n", mi)
 
-	i := 100
-	fmt.Println(mi + i)
+	// i := 100
+	// fmt.Println(mi + i)
+
+	mi.Print()
+
 }
