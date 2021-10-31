@@ -19,5 +19,9 @@ func main() {
 	err := RaiseError()
 	fmt.Println(err.Error())
 
-	fmt.Println(err.Messageß)
+	// fmt.Println(err.Messageß)*
+	e, ok := err.(*MyError)
+	if ok {
+		fmt.Println(e.ErrCode)
+	}
 }
