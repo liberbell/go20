@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type Stringer interface {
 	String() string
 }
@@ -10,5 +12,6 @@ type Point struct {
 }
 
 func main() {
-	a
+	p := &Point{100, "ABC"}
+	fmt.Println(p)
 }
