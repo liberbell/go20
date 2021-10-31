@@ -4,6 +4,10 @@ import "fmt"
 
 type Myint int
 
+func (mi Myint) Print() {
+	fmt.Println(mi)
+}
+
 func main() {
 	var mi Myint
 	fmt.Println(mi)
