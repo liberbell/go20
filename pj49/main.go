@@ -26,4 +26,6 @@ func main() {
 
 	fmt.Println(appName())
 	// fmt.Println(AppName, Version)
+
+	fmt.Println(Do("AAA"))
 }
