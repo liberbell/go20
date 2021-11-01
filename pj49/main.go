@@ -13,6 +13,11 @@ func appName() string {
 	return AppName + " " + Version
 }
 
+func Do(s string) (b string) {
+	var b string = s
+	return b
+}
+
 func main() {
 	f.Println(foo.Max)
 	// fmt.Println(foo.min)
@@ -20,4 +25,5 @@ func main() {
 	Println(foo.Max)
 
 	fmt.Println(appName())
+	// fmt.Println(AppName, Version)
 }
