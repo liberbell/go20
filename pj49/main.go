@@ -16,6 +16,11 @@ func appName() string {
 func Do(s string) (b string) {
 	// var b string = s
 	b = s
+	{
+		b := "BBB"
+		fmt.Println(b)
+	}
+	fmt.Println(b)
 	return b
 }
 
