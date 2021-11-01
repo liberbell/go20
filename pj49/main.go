@@ -14,7 +14,8 @@ func appName() string {
 }
 
 func Do(s string) (b string) {
-	var b string = s
+	// var b string = s
+	b = s
 	return b
 }
 
