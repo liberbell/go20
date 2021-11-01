@@ -1,4 +1,4 @@
-package fooß
+package foo
 
 const (
 	Max = 100
