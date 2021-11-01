@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go20/pj48/foo"
+	"src/foo"
 )
 
 func main() {
