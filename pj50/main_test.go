@@ -11,7 +11,7 @@ func TestIsOne(t *testing.T) {
 	}
 	v := IsONe(i)
 
-	if v == fales {
+	if !v {
 		t.Errorf("%v != %v", i, 1)
 	}
 }
