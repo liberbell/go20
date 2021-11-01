@@ -8,4 +8,8 @@ func TestIsOne(t *testing.T) {
 		t.Skip("Skip!!")
 	}
 	v := IsONe(i)
+
+	if v == false {
+		t.Error("%v != %v ", i, 1)
+	}
 }
