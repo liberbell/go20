@@ -7,5 +7,6 @@ import (
 
 func main() {
 	fmt.Println(foo.Max)
-	fmt.Println(foo.min)
+	// fmt.Println(foo.min)
+	fmt.Println(foo.ReturnMin())
 }
