@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func IsONe(i int) bool {
 	if i == 1 {
 		return true
@@ -9,5 +11,5 @@ func IsONe(i int) bool {
 }
 
 func main() {
-	fmt.
+	fmt.Println(IsONe(1))
 }
