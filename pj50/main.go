@@ -12,4 +12,5 @@ func IsONe(i int) bool {
 
 func main() {
 	fmt.Println(IsONe(1))
+	fmt.Println(IsONe(0))
 }
