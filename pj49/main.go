@@ -1,12 +1,12 @@
 package main
 
 import (
-	"fmt"
+	f "fmt"
 	"foo"
 )
 
 func main() {
-	fmt.Println(foo.Max)
+	f.Println(foo.Max)
 	// fmt.Println(foo.min)
-	fmt.Println(foo.ReturnMin())
+	f.Println(foo.ReturnMin())
 }
