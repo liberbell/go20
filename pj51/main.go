@@ -61,4 +61,6 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
+	fmt.Println(nn)
+	fmt.Println(string(bs2))
 }
