@@ -37,4 +37,7 @@ func main() {
 	fmt.Println(time.Millisecond)
 	fmt.Println(time.Nanosecond)
 	fmt.Println(time.Microsecond)
+
+	d, _ := time.ParseDuration("2h30m")
+	fmt.Println(d)
 }
