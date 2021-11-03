@@ -20,6 +20,9 @@ func main() {
 	t := time.Now()
 	fmt.Println(t)
 
-	t2 := time.Date(2021, 11, 3, 10, 10, 10, 0, time.Local)
+	t2 := time.Date(2021, 11, 4, 10, 10, 10, 0, time.Local)
 	fmt.Println(t2)
+	fmt.Println(t2.Year())
+	fmt.Println(t2.Month())
+	fmt.Println(t.Hour())
 }
