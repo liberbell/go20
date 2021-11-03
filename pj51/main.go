@@ -62,5 +62,5 @@ func main() {
 		log.Fatalln(err)
 	}
 	fmt.Println(nn)
-	fmt.Println(string(bs2))
+	// fmt.Println(string(bs2))
 }
