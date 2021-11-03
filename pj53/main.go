@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"time"
 )
 
@@ -38,6 +39,9 @@ func main() {
 	fmt.Println(time.Nanosecond)
 	fmt.Println(time.Microsecond)
 
-	d, _ := time.ParseDuration("2h30m")
+	d, err := time.ParseDuration("2h30m")
+	if err != nil {
+		log.Fatalln(err)
+	}
 	fmt.Println(d)
 }
