@@ -46,4 +46,10 @@ func main() {
 		log.Fatalln(err)
 	}
 	defer f.Close()
+
+	bs := make([]byte, 128)
+	n, err := f.Read(bs)
+	if err != nil {
+		log.Fatalln(err)
+	}
 }
