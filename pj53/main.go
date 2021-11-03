@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	f, err := os.OpenFile("foo.txt", os.O_RDONLY, 0666)
+	f, err := os.OpenFile("foo.txt", os.O_RDWR|os.O_CREATE, 0666)
 	if err != nil {
 		log.Fatalln(err)
 	}
