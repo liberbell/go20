@@ -41,7 +41,7 @@ func main() {
 
 	// f.WriteString("Yarh")
 
-	f, err := os.ReadFile("test.txt")
+	f, err := os.Open("test.txt")
 	if err != nil {
 		log.Fatalln(err)
 	}
