@@ -25,4 +25,8 @@ func main() {
 	fmt.Println(t2.Year())
 	fmt.Println(t2.Month())
 	fmt.Println(t.Hour())
+	fmt.Println(t.Minute())
+	fmt.Println(t.Second())
+	fmt.Println(t.Nanosecond())
+	fmt.Println(t.Zone())
 }
