@@ -19,4 +19,6 @@ func main() {
 
 	t := time.Now()
 	fmt.Println(t)
+
+	t2 := tiem.Date(2021, 11, 3, 10, 10, 10, 0, time.Local)
 }
