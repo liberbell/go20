@@ -34,4 +34,9 @@ func main() {
 
 	f, _ := os.Create("test.txt")
 	f.Write([]byte("Hello\n"))
+
+	f.WriteAt([]byte("Golang\n"), 6)
+	f.Seek(0, os.SEEK_END)
+
+	f.WriteString("Yarh")
 }
