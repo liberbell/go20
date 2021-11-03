@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"os"
 )
@@ -52,4 +53,6 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
+	fmt.Println(n)
+	fmt.Println(string(bs))
 }
