@@ -44,4 +44,8 @@ func main() {
 		log.Fatalln(err)
 	}
 	fmt.Println(d)
+
+	t3 := time.Now()
+	t3 = t3.Add(2*time.Minute + 15*time.Second)
+	fmt.Println(t3)
 }
