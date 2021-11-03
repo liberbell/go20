@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"os"
 )
 
@@ -32,11 +33,17 @@ func main() {
 	// }
 	// defer f.Close()
 
-	f, _ := os.Create("test.txt")
-	f.Write([]byte("Hello\n"))
+	// f, _ := os.Create("test.txt")
+	// f.Write([]byte("Hello\n"))
 
-	f.WriteAt([]byte("Golang"), 6)
-	f.Seek(0, os.SEEK_END)
+	// f.WriteAt([]byte("Golang"), 6)
+	// f.Seek(0, os.SEEK_END)
 
-	f.WriteString("Yarh")
+	// f.WriteString("Yarh")
+
+	f, err := os.ReadFile("test.txt")
+	if err != nil {
+		log.Fatalln(err)
+	}
+	defer f.Close()
 }
