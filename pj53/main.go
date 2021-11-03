@@ -32,4 +32,9 @@ func main() {
 
 	fmt.Println(time.Hour)
 	fmt.Printf("%T\n", time.Hour)
+	fmt.Println(time.Minute)
+	fmt.Println(time.Second)
+	fmt.Println(time.Millisecond)
+	fmt.Println(time.Nanosecond)
+	fmt.Println(time.Microsecond)
 }
