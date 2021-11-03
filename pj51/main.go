@@ -55,4 +55,10 @@ func main() {
 	}
 	fmt.Println(n)
 	fmt.Println(string(bs))
+
+	bs2 := make([]byte, 128)
+	nn, err := f.ReadAt(bs2, 10)
+	if err != nil {
+		log.Fatalln(err)
+	}
 }
