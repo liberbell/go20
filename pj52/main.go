@@ -23,9 +23,9 @@ func main() {
 
 	bs2 := make([]byte, 128)
 	nn, err := f.ReadAt(bs2, 10)
-	if err != nil {
-		log.Fatalln(err)
-	}
+	// if err != nil {
+	// 	log.Fatalln(err)
+	// }
 	fmt.Println(nn)
 	fmt.Println(string(bs2))
 }
