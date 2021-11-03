@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	"log"
 	"os"
 )
 
@@ -18,13 +18,17 @@ func main() {
 	// if err != nil {
 	// 	log.Fatalln(err)
 	// }
-	fmt.Println(os.Args[0])
-	fmt.Println(os.Args[1])
-	fmt.Println(os.Args[2])
-	fmt.Println(os.Args[3])
+	// fmt.Println(os.Args[0])
+	// fmt.Println(os.Args[1])
+	// fmt.Println(os.Args[2])
+	// fmt.Println(os.Args[3])
 
-	fmt.Printf("length= %d\n", len(os.Args))
-	for i, v := range os.Args {
-		fmt.Println(i, v)
+	// fmt.Printf("length= %d\n", len(os.Args))
+	// for i, v := range os.Args {
+	// 	fmt.Println(i, v)
+	// }
+	f, err := os.Open("test.txt")
+	if err != nil {
+		log.Fatalln(err)
 	}
 }
