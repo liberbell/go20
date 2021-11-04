@@ -14,5 +14,8 @@ func main() {
 	fmt.Println(d2)
 
 	fmt.Println(t6.Before(t5))
+	fmt.Println(t6.After(t5))
+	fmt.Println(t5.Before(t6))
+	fmt.Println(t5.After(t6))
 
 }
