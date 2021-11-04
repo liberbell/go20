@@ -30,4 +30,7 @@ func main() {
 	// fmt.Println(math.Min(1, 2))
 	fmt.Println(math.Trunc(3.14))
 	fmt.Println(math.Trunc(-3.14))
+
+	fmt.Println(math.Floor(3.5))
+	fmt.Println(math.Floor(-3.5))
 }
