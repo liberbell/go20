@@ -11,5 +11,6 @@ func main() {
 	fmt.Println(t6)
 
 	d2 := t5.Sub(t6)
+	fmt.Println(d2)
 
 }
