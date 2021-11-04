@@ -22,4 +22,7 @@ func main() {
 
 	fmt.Println(math.Pow(0, 2))
 	fmt.Println(math.Pow(2, 2))
+
+	fmt.Println(math.Sqrt(2))
+	fmt.Println(math.Cbrt(8))
 }
