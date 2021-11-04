@@ -14,4 +14,7 @@ func main() {
 
 	fmt.Println(math.MaxFloat64)
 	fmt.Println(math.SmallestNonzeroFloat64)
+
+	fmt.Println(math.MaxInt64)
+	fmt.Println(math.MinInt32)
 }
