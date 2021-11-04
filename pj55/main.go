@@ -19,4 +19,7 @@ func main() {
 	// fmt.Println(math.MinInt32)
 	fmt.Println(math.Abs(100))
 	fmt.Println(math.Abs(-100))
+
+	fmt.Println(math.Pow(0, 2))
+	fmt.Println(math.Pow(2, 2))
 }
