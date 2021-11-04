@@ -25,4 +25,7 @@ func main() {
 
 	fmt.Println(math.Sqrt(2))
 	fmt.Println(math.Cbrt(8))
+
+	fmt.Println(math.Max(1, 2))
+	fmt.Println(math.Min(1, 2))
 }
