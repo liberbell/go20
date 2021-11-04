@@ -13,4 +13,6 @@ func main() {
 	d2 := t5.Sub(t6)
 	fmt.Println(d2)
 
+	fmt.Println(t6.Before(t5))
+
 }
