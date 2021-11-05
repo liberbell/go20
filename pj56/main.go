@@ -21,4 +21,6 @@ func main() {
 	fmt.Println(rand.Int31())
 	fmt.Println(rand.Int63())
 
+	fmt.Println(rand.Uint32())
+
 }
