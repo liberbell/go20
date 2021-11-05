@@ -16,6 +16,10 @@ func main() {
 	fmt.Println(time.Now().UnixNano())
 	rand.Seed(time.Now().UnixNano())
 
+	fmt.Println(rand.Float64())
+	fmt.Println(rand.Float64())
+	fmt.Println(rand.Float64())
+
 	fmt.Println(rand.Intn(100))
 	fmt.Println(rand.Int())
 	fmt.Println(rand.Int31())
