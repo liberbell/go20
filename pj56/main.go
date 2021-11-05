@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"time"
 )
 
 func main() {
@@ -11,4 +12,7 @@ func main() {
 	fmt.Println(rand.Float64())
 	fmt.Println(rand.Float64())
 	fmt.Println(rand.Float64())
+
+	fmt.Println(time.Now().UnixNano())
+	rand.Seed(time.Now().UnixNano())
 }
