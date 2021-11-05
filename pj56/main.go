@@ -18,5 +18,7 @@ func main() {
 
 	fmt.Println(rand.Intn(100))
 	fmt.Println(rand.Int())
+	fmt.Println(rand.Int31())
+	fmt.Println(rand.Int63())
 
 }
