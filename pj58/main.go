@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
 	// fmt.Println("Display")
@@ -13,11 +16,15 @@ func main() {
 	// fmt.Printf("%s\n", "hello")
 	// fmt.Printf("%#v\n", "hello")
 
-	s := fmt.Sprint("Hello")
-	s1 := fmt.Sprintf("%v\n", "Hello")
-	s2 := fmt.Sprintln("Hello")
+	// s := fmt.Sprint("Hello")
+	// s1 := fmt.Sprintf("%v\n", "Hello")
+	// s2 := fmt.Sprintln("Hello")
 
-	fmt.Println(s)
-	fmt.Println(s1)
-	fmt.Println(s2)
+	// fmt.Println(s)
+	// fmt.Println(s1)
+	// fmt.Println(s2)
+
+	fmt.Fprint(os.Stdout, "hello")
+	fmt.Fprintf(os.Stdout, "hello")
+	fmt.Fprintln(os.Stdout, "hello")
 }
