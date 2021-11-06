@@ -1,6 +1,9 @@
 package main
 
-import "flag"
+import (
+	"flag"
+	"fmt"
+)
 
 func main() {
 	var (
@@ -13,4 +16,8 @@ func main() {
 	flag.BoolVar(&x, "x", false, "Extra option")
 
 	flag.Parse()
+
+	fmt.Println("Max number: ", max)
+	fmt.Println("Message: ", msg)
+	fmt.Println("Extra Option: ", x)
 }
