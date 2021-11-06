@@ -14,7 +14,7 @@ func main() {
 	// fmt.Printf("%#v\n", "hello")
 
 	s := fmt.Sprint("Hello")
-	s1 := fmt.Sprintf("Hello")
+	s1 := fmt.Sprintf("%v\n", "Hello")
 	s2 := fmt.Sprintln("Hello")
 
 	fmt.Println(s)
