@@ -15,4 +15,8 @@ func main() {
 	// log.Fatal("Log\n")
 	// log.Fatalln("Log2")
 	// log.Fatalf("Log%d\n", 3)
+
+	log.Panic("Log")
+	log.Panicln("Log2")
+	log.Panicf("Log%d\n", 3)
 }
