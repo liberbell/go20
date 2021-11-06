@@ -12,7 +12,7 @@ func main() {
 	// log.Printf("Log%d\n", 3)
 	// log.Println("Log2")
 
-	log.Fatal()
-	log.Fatalln()
-	log.Fatalf()
+	log.Fatal("Log\n")
+	log.Fatalln("Log2")
+	log.Fatalf("Log%d\n", 3)
 }
