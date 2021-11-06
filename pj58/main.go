@@ -27,4 +27,9 @@ func main() {
 	fmt.Fprint(os.Stdout, "hello")
 	fmt.Fprintf(os.Stdout, "hello")
 	fmt.Fprintln(os.Stdout, "hello")
+
+	f, _ := os.Create("test.txt")
+	defer f.Close()
+
+	fmt.Fprintln(f, "Fprint")
 }
