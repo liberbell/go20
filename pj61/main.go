@@ -42,4 +42,10 @@ func main() {
 		fmt.Println("Convert error.")
 	}
 	fmt.Printf("%v %T\n", bf1, bf1)
+	bf2, _ := strconv.ParseBool("0")
+	bf3, _ := strconv.ParseBool("f")
+	bf4, _ := strconv.ParseBool("F")
+	bf5, _ := strconv.ParseBool("FALSE")
+	bf6, _ := strconv.ParseBool("False")
+	fmt.Println(bf2, bf3, bf4, bf5, bf6)
 }
