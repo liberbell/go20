@@ -36,4 +36,10 @@ func main() {
 	bt5, _ := strconv.ParseBool("TRUE")
 	bt6, _ := strconv.ParseBool("True")
 	fmt.Println(bt2, bt3, bt4, bt5, bt6)
+
+	bf1, ok := strconv.ParseBool("false")
+	if ok != nil {
+		fmt.Println("Convert error.")
+	}
+	fmt.Printf("%v %T\n", bf1, bf1)
 }
