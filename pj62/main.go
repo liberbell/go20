@@ -15,6 +15,11 @@ func main() {
 	i2 := strings.Index("ABCDEFGHI", "D")
 	fmt.Println(i1, i2)
 
-	i3 := strings.LastIndex("ABC", "ABC")
+	i3 := strings.LastIndex("ABCDABCD", "BC")
 	fmt.Println(i3)
+
+	i4 := strings.IndexAny("ABC", "ABC")
+
+	i5 := strings.LastIndex("ABC", "ABC")
+	fmt.Println(i4, i5)
 }
