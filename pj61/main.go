@@ -29,4 +29,10 @@ func main() {
 
 	bt1, _ := strconv.ParseBool("true")
 	fmt.Printf("%v %T\n", bt1, bt1)
+
+	bt2, _ := strconv.ParseBool("1")
+	bt3, _ := strconv.ParseBool("t")
+	bt4, _ := strconv.ParseBool("T")
+	bt5, _ := strconv.ParseBool("TRUE")
+	bt6, _ := strconv.ParseBool("True")
 }
