@@ -53,4 +53,7 @@ func main() {
 	fmt.Printf("%v %T\n", i3, i3)
 	i4, _ := strconv.ParseInt("-1", 10, 0)
 	fmt.Printf("%v %T\n", i4, i4)
+
+	i10, _ := strconv.Atoi("123")
+	fmt.Println(i10)
 }
