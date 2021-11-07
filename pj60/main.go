@@ -13,4 +13,11 @@ func main() {
 
 	log.SetFlags(log.Ldate | log.Ltime | log.Lmicroseconds)
 	log.Println("B")
+
+	log.SetFlags(log.Ltime | log.Lshortfile)
+	log.Println("C")
+
+	log.SetFlags(log.LstdFlags)
+	log.SetPrefix("[LOG]")
+	log.Println("E")
 }
