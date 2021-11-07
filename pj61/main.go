@@ -20,4 +20,7 @@ func main() {
 
 	fmt.Println(strconv.FormatFloat(123.456, 'f', -1, 64))
 	fmt.Println(strconv.FormatFloat(123.456, 'f', 2, 64))
+
+	fmt.Println(strconv.FormatFloat(123.456, 'g', -1, 64))
+	fmt.Println(strconv.FormatFloat(123456789.123, 'f', -1, 64))
 }
