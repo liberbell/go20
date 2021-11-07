@@ -35,4 +35,5 @@ func main() {
 	bt4, _ := strconv.ParseBool("T")
 	bt5, _ := strconv.ParseBool("TRUE")
 	bt6, _ := strconv.ParseBool("True")
+	fmt.Println(bt2, bt3, bt4, bt5, bt6)
 }
