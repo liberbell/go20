@@ -10,4 +10,7 @@ func main() {
 
 	log.SetFlags(log.LstdFlags)
 	log.Println("A")
+
+	log.SetFlags(log.Ldate | log.Ltime | log.Lmicroseconds)
+	log.Println("B")
 }
