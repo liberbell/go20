@@ -49,11 +49,18 @@ func main() {
 	// bf6, _ := strconv.ParseBool("False")
 	// fmt.Println(bf2, bf3, bf4, bf5, bf6)
 
-	i3, _ := strconv.ParseInt("12345", 10, 0)
-	fmt.Printf("%v %T\n", i3, i3)
-	i4, _ := strconv.ParseInt("-1", 10, 0)
-	fmt.Printf("%v %T\n", i4, i4)
+	// i3, _ := strconv.ParseInt("12345", 10, 0)
+	// fmt.Printf("%v %T\n", i3, i3)
+	// i4, _ := strconv.ParseInt("-1", 10, 0)
+	// fmt.Printf("%v %T\n", i4, i4)
 
-	i10, _ := strconv.Atoi("123")
-	fmt.Println(i10)
+	// i10, _ := strconv.Atoi("123")
+	// fmt.Println(i10)
+
+	fl1, _ := strconv.ParseFloat("3.14", 64)
+	fl2, _ := strconv.ParseFloat(".2", 64)
+	fl3, _ := strconv.ParseFloat("-2", 64)
+	fl4, _ := strconv.ParseFloat("1.2345e8", 64)
+	fl5, _ := strconv.ParseFloat("1.2345e8", 64)
+	fmt.Println(fl1, fl2, fl3, fl4, fl5)
 }
