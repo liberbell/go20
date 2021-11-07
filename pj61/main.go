@@ -27,25 +27,28 @@ func main() {
 	// fmt.Println(strconv.FormatFloat(123.456, 'g', 4, 64))
 	// fmt.Println(strconv.FormatFloat(123456789.123, 'G', 4, 64))
 
-	bt1, _ := strconv.ParseBool("true")
-	fmt.Printf("%v %T\n", bt1, bt1)
+	// bt1, _ := strconv.ParseBool("true")
+	// fmt.Printf("%v %T\n", bt1, bt1)
 
-	bt2, _ := strconv.ParseBool("1")
-	bt3, _ := strconv.ParseBool("t")
-	bt4, _ := strconv.ParseBool("T")
-	bt5, _ := strconv.ParseBool("TRUE")
-	bt6, _ := strconv.ParseBool("True")
-	fmt.Println(bt2, bt3, bt4, bt5, bt6)
+	// bt2, _ := strconv.ParseBool("1")
+	// bt3, _ := strconv.ParseBool("t")
+	// bt4, _ := strconv.ParseBool("T")
+	// bt5, _ := strconv.ParseBool("TRUE")
+	// bt6, _ := strconv.ParseBool("True")
+	// fmt.Println(bt2, bt3, bt4, bt5, bt6)
 
-	bf1, ok := strconv.ParseBool("false")
-	if ok != nil {
-		fmt.Println("Convert error.")
-	}
-	fmt.Printf("%v %T\n", bf1, bf1)
-	bf2, _ := strconv.ParseBool("0")
-	bf3, _ := strconv.ParseBool("f")
-	bf4, _ := strconv.ParseBool("F")
-	bf5, _ := strconv.ParseBool("FALSE")
-	bf6, _ := strconv.ParseBool("False")
-	fmt.Println(bf2, bf3, bf4, bf5, bf6)
+	// bf1, ok := strconv.ParseBool("false")
+	// if ok != nil {
+	// 	fmt.Println("Convert error.")
+	// }
+	// fmt.Printf("%v %T\n", bf1, bf1)
+	// bf2, _ := strconv.ParseBool("0")
+	// bf3, _ := strconv.ParseBool("f")
+	// bf4, _ := strconv.ParseBool("F")
+	// bf5, _ := strconv.ParseBool("FALSE")
+	// bf6, _ := strconv.ParseBool("False")
+	// fmt.Println(bf2, bf3, bf4, bf5, bf6)
+
+	i3, _ := strconv.ParseInt("12345", 10, 0)
+	fmt.Printf("%v %T\n", i3, i3)
 }
