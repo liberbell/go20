@@ -51,4 +51,6 @@ func main() {
 
 	i3, _ := strconv.ParseInt("12345", 10, 0)
 	fmt.Printf("%v %T\n", i3, i3)
+	i4, _ := strconv.ParseInt("-1", 10, 0)
+	fmt.Printf("%v %T\n", i4, i4)
 }
