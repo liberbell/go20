@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	log.SetOutput(os.Stdout)
+	// log.SetOutput(os.Stdout)
 
 	// log.Print("Log\n")
 	// log.Printf("Log%d\n", 3)
@@ -16,7 +16,14 @@ func main() {
 	// log.Fatalln("Log2")
 	// log.Fatalf("Log%d\n", 3)
 
-	log.Panic("Log\n")
-	log.Panicln("Log2")
-	log.Panicf("Log%d\n", 3)
+	// log.Panic("Log\n")
+	// log.Panicln("Log2")
+	// log.Panicf("Log%d\n", 3)
+
+	f, err := os.Create("err.txt")
+	if err != nil {
+		return
+	}
+	log.SetOutput(f)
+	log.Println("write file")
 }
