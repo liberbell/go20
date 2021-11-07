@@ -17,4 +17,7 @@ func main() {
 
 	fmt.Println(strconv.FormatFloat(123.456, 'E', -1, 64))
 	fmt.Println(strconv.FormatFloat(123.456, 'e', 2, 64))
+
+	fmt.Println(strconv.FormatFloat(123.456, 'f', -1, 64))
+	fmt.Println(strconv.FormatFloat(123.456, 'f', 2, 64))
 }
