@@ -16,4 +16,8 @@ func main() {
 	re2 := regexp.MustCompile("A")
 	match = re2.MatchString("ABC")
 	fmt.Println(match)
+
+	re3 := regexp.MustCompile(`(?i)abc`)
+	match = re3.MatchString("ABC")
+	fmt.Println(match)
 }
