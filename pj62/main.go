@@ -62,4 +62,8 @@ func main() {
 	fmt.Println(s13)
 	fmt.Println(s14)
 
+	s15 := strings.Fields("a b c")
+	fmt.Println(s15)
+	fmt.Println(s15[1])
+
 }
