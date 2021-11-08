@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"strings"
+)
+
 func main() {
 	// s1 := strings.Join([]string{"A", "B", "C"}, ",")
 	// s2 := strings.Join([]string{"A", "B", "C"}, "")
@@ -47,5 +52,9 @@ func main() {
 	// fmt.Println(s9)
 	// s10 := strings.SplitAfterN("A,B,C,D,E,F", ",", 4)
 	// fmt.Println(s10)
+
+	s11 := strings.ToLower("ABC")
+	s12 := strings.ToUpper("abc")
+	fmt.Println(s11, s12)
 
 }
