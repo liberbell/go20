@@ -50,4 +50,6 @@ func main() {
 
 	s9 := strings.SplitN("A,B,C,D,E,F", ",", 2)
 	fmt.Println(s9)
+	s10 := strings.SplitAfterN("A,B,C,D,E,F", ",", 4)
+	fmt.Println(s10)
 }
