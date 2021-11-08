@@ -20,6 +20,10 @@ func main() {
 
 	i4 := strings.IndexAny("ABC", "ABC")
 
-	i5 := strings.LastIndex("ABC", "ABC")
+	i5 := strings.LastIndexAny("ABC", "ABC")
 	fmt.Println(i4, i5)
+
+	b1 := strings.HasPrefix("ABC", "A")
+	b2 := strings.HasSuffix("ABC", "C")
+	fmt.Println(b1, b2)
 }
