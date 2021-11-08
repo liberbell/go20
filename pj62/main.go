@@ -42,4 +42,9 @@ func main() {
 	s5 := strings.Replace("AAAAAA", "A", "B", 1)
 	s6 := strings.Replace("AAAAAA", "A", "B", -1)
 	fmt.Println(s5, s6)
+
+	s7 := strings.Split("A,B,C,D,E,F", ",")
+	s8 := strings.SplitAfter("A,B,C,D,E,F", ",")
+	fmt.Println(s7)
+	fmt.Println(s8)
 }
