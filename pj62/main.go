@@ -47,4 +47,7 @@ func main() {
 	s8 := strings.SplitAfter("A,B,C,D,E,F", ",")
 	fmt.Println(s7)
 	fmt.Println(s8)
+
+	s9 := strings.SplitN("A,B,C,D,E,F", ",", 2)
+	fmt.Println(s9)
 }
