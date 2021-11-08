@@ -12,4 +12,7 @@ func main() {
 	re1, _ := regexp.Compile("A")
 	match = re1.MatchString("ABC")
 	fmt.Println(match)
+
+	re2 := regexp.MustCompile("A")
+	match = re2.MatchString("ABC")
 }
