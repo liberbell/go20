@@ -57,4 +57,8 @@ func main() {
 	s12 := strings.ToUpper("abc")
 	fmt.Println(s11, s12)
 
+	s13 := strings.TrimSpace("    -     ABC    -     ")
+	s14 := strings.TrimSpace("　　　　　　ABC　　　　　　")
+	fmt.Println(s13, s14)
+
 }
