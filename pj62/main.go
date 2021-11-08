@@ -26,4 +26,8 @@ func main() {
 	b1 := strings.HasPrefix("ABC", "A")
 	b2 := strings.HasSuffix("ABC", "C")
 	fmt.Println(b1, b2)
+
+	b3 := strings.Contains("ABC", "B")
+	b4 := strings.ContainsAny("ABCDE", "BD")
+	fmt.Println(b3, b4)
 }
