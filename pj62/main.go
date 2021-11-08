@@ -30,4 +30,8 @@ func main() {
 	b3 := strings.Contains("ABC", "B")
 	b4 := strings.ContainsAny("ABCDE", "BD")
 	fmt.Println(b3, b4)
+
+	i6 := strings.Count("ABCABC", "B")
+	i7 := strings.Count("ABCABC", "")
+	fmt.Println(i6, i7)
 }
