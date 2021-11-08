@@ -59,6 +59,7 @@ func main() {
 
 	s13 := strings.TrimSpace("    -     ABC    -     ")
 	s14 := strings.TrimSpace("　　　　　　ABC　　　　　　")
-	fmt.Println(s13, s14)
+	fmt.Println(s13)
+	fmt.Println(s14)
 
 }
