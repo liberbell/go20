@@ -15,4 +15,5 @@ func main() {
 
 	re2 := regexp.MustCompile("A")
 	match = re2.MatchString("ABC")
+	fmt.Println(match)
 }
