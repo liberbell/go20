@@ -49,10 +49,13 @@ func main() {
 	// x+? 1回以上繰り返す、最小マッチ
 	// x?? 0回以上、1回以下繰り返す
 
-	re5 := regexp.MustCompile("a+b*")
-	fmt.Println(re5.MatchString("ab"))
-	fmt.Println(re5.MatchString("a"))
-	fmt.Println(re5.MatchString("aaaaaaa"))
-	fmt.Println(re5.MatchString("b"))
+	// re5 := regexp.MustCompile("a+b*")
+	// fmt.Println(re5.MatchString("ab"))
+	// fmt.Println(re5.MatchString("a"))
+	// fmt.Println(re5.MatchString("aaaaaaa"))
+	// fmt.Println(re5.MatchString("b"))
+
+	re8 := regexp.MustCompile(`[XYZ]`)
+	fmt.Println(re8.MatchString("Y"))
 
 }
