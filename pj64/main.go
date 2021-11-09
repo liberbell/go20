@@ -55,16 +55,19 @@ func main() {
 	// fmt.Println(re5.MatchString("aaaaaaa"))
 	// fmt.Println(re5.MatchString("b"))
 
-	re8 := regexp.MustCompile(`[XYZ]`)
-	fmt.Println(re8.MatchString("Y"))
+	// re8 := regexp.MustCompile(`[XYZ]`)
+	// fmt.Println(re8.MatchString("Y"))
 
-	re9 := regexp.MustCompile(`^[0-9A-Za-z_]{3}$`)
-	fmt.Println(re9.MatchString("ABC"))
-	fmt.Println(re9.MatchString("abcdefg"))
+	// re9 := regexp.MustCompile(`^[0-9A-Za-z_]{3}$`)
+	// fmt.Println(re9.MatchString("ABC"))
+	// fmt.Println(re9.MatchString("abcdefg"))
 
-	re10 := regexp.MustCompile(`[^0-9A-Za-z_]`)
-	fmt.Println(re10.MatchString("ABC"))
-	fmt.Println(re10.MatchString("abcdefg"))
-	fmt.Println(re10.MatchString("$"))
+	// re10 := regexp.MustCompile(`[^0-9A-Za-z_]`)
+	// fmt.Println(re10.MatchString("ABC"))
+	// fmt.Println(re10.MatchString("abcdefg"))
+	// fmt.Println(re10.MatchString("$"))
+
+	re11 := regexp.MustCompile(`(abc|ABC)(xyz|XYZ)`)
+	fmt.Println(re11.MatchString("abcxyz"))
 
 }
