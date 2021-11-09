@@ -25,6 +25,10 @@ func main() {
 	match = re3.MatchString("ABC")
 	fmt.Println(match)
 
+	^ 文頭(mフラグの場合行末も)
+	$ 文末(mフラグの場合行頭も)
+
+
 	re4 := regexp.MustCompile(`^ABC$`)
 	match = re4.MatchString("ABC")
 	fmt.Println(match)
