@@ -39,16 +39,15 @@ func main() {
 	// match = re4.MatchString("   ABC   ")
 	// fmt.Println(match)
 
-	x+ 0
-	x* 1
-	x? 0
-	x{n, m} n
-	x{n, } n
-	x{n} n
-	x*? 0
-	x+? 1
-	x?? 0
-	
+	// x+ 0回以上繰り返し
+	// x* 1回以上繰り返し
+	// x? 0回以上、1回以下
+	// x{n, m} n回以上、m回以下繰り返し最小マッチ
+	// x{n, } n回以上繰り返す
+	// x{n} n回繰り返す
+	// x*? 0回以上繰り返す、最小マッチ
+	// x+? 1回以上繰り返す、最小マッチ
+	// x?? 0回以上、1回以下繰り返す
 
 	re5 := regexp.MustCompile("a+b*")
 	fmt.Println(re5.MatchString("ab"))
