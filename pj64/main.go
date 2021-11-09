@@ -62,8 +62,9 @@ func main() {
 	fmt.Println(re9.MatchString("ABC"))
 	fmt.Println(re9.MatchString("abcdefg"))
 
-	re10 := regexp.MustCompile(`^[0-9A-Za-z_]`)
+	re10 := regexp.MustCompile(`[^0-9A-Za-z_]`)
 	fmt.Println(re10.MatchString("ABC"))
+	fmt.Println(re10.MatchString("abcdefg"))
 	fmt.Println(re10.MatchString("$"))
 
 }
