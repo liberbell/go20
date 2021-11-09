@@ -25,9 +25,12 @@ func main() {
 	match = re3.MatchString("ABC")
 	fmt.Println(match)
 
-	^ 文頭(mフラグの場合行末も)
-	$ 文末(mフラグの場合行頭も)
-
+	// ^ 文頭(mフラグの場合行末も)
+	// $ 文末(mフラグの場合行頭も)
+	// /A 文頭
+	// /z 文末
+	// /b ASCII
+	// /B 非ASCII
 
 	re4 := regexp.MustCompile(`^ABC$`)
 	match = re4.MatchString("ABC")
