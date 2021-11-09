@@ -32,11 +32,14 @@ func main() {
 	// /b ASCII
 	// /B 非ASCII
 
-	re4 := regexp.MustCompile(`^ABC$`)
-	match = re4.MatchString("ABC")
-	fmt.Println(match)
+	// re4 := regexp.MustCompile(`^ABC$`)
+	// match = re4.MatchString("ABC")
+	// fmt.Println(match)
 
-	match = re4.MatchString("   ABC   ")
-	fmt.Println(match)
+	// match = re4.MatchString("   ABC   ")
+	// fmt.Println(match)
+
+	re5 := regexp.MustCompile("a+b*")
+	fmt.Println(re5.MatchString("ab"))
 
 }
