@@ -41,5 +41,8 @@ func main() {
 
 	re5 := regexp.MustCompile("a+b*")
 	fmt.Println(re5.MatchString("ab"))
+	fmt.Println(re5.MatchString("a"))
+	fmt.Println(re5.MatchString("aaaaaaa"))
+	fmt.Println(re5.MatchString("b"))
 
 }
