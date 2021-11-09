@@ -29,4 +29,7 @@ func main() {
 	match = re4.MatchString("ABC")
 	fmt.Println(match)
 
+	match = re4.MatchString("   ABC   ")
+	fmt.Println(match)
+
 }
