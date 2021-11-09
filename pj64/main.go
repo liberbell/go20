@@ -58,4 +58,8 @@ func main() {
 	re8 := regexp.MustCompile(`[XYZ]`)
 	fmt.Println(re8.MatchString("Y"))
 
+	re9 := regexp.MustCompile(`^[0-9A-Za-z_]{3}$`)
+	fmt.Println(re9.MatchString("ABC"))
+	fmt.Println(re9.MatchString("abcdefg"))
+
 }
