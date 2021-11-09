@@ -25,4 +25,8 @@ func main() {
 	match = re3.MatchString("ABC")
 	fmt.Println(match)
 
+	re4 := regexp.MustCompile(`^ABC$`)
+	match = re4.MatchString("ABC")
+	fmt.Println(match)
+
 }
