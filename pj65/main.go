@@ -13,7 +13,7 @@ func main() {
 	// fs2 := re.FindAllString("ABCXYZABCXYZ", -1)
 	// fmt.Println(fs2)
 
-	re1 := regexp.MustCompile(`(\d+)-(\d+)-(\d)`)
+	re1 := regexp.MustCompile(`(\d+)-(\d+)-(\d+)`)
 	s := `
 		0120-456-7899
 		111-222-333
