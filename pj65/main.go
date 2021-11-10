@@ -33,4 +33,7 @@ func main() {
 
 	re2 := regexp.MustCompile(`\s+`)
 	fmt.Println(re2.ReplaceAllString("AAA BBB CCC", ","))
+
+	re3 := regexp.MustCompile(`、|。`)
+	fmt.Println(re3.ReplaceAllString("今日は、いい天気です。", "-"))
 }
