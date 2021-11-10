@@ -70,7 +70,7 @@ func main() {
 	re11 := regexp.MustCompile(`(abc|ABC)(xyz|XYZ)`)
 	fmt.Println(re11.MatchString("abcxyz"))
 	fmt.Println(re11.MatchString("ABCXYZ"))
-	fmt.Println(re11.MatchString("abcxyz"))
-	fmt.Println(re11.MatchString("abcxyz"))
+	fmt.Println(re11.MatchString("ABCxyz"))
+	fmt.Println(re11.MatchString("abcXYZ"))
 
 }
