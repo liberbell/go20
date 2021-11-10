@@ -19,4 +19,7 @@ func main() {
 		111-222-333
 		090-1234-5678
 		`
+
+	ms := re1.FindAllStringSubmatch(s, -1)
+	fmt.Println(ms)
 }
