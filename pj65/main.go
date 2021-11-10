@@ -26,4 +26,6 @@ func main() {
 	for _, v := range ms {
 		fmt.Println(v)
 	}
+
+	fmt.Println(ms[0][0])
 }
