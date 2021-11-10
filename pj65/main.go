@@ -28,4 +28,6 @@ func main() {
 	}
 
 	fmt.Println(ms[0][0])
+	fmt.Println(ms[0][1])
+	fmt.Println(ms[0][2])
 }
