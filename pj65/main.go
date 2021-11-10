@@ -22,4 +22,8 @@ func main() {
 
 	ms := re1.FindAllStringSubmatch(s, -1)
 	fmt.Println(ms)
+
+	for _, v := range ms {
+		fmt.Println(v)
+	}
 }
