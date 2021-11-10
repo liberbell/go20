@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"regexp"
-)
-
 func main() {
 	// match, _ := regexp.MatchString("A", "ABC")
 	// fmt.Println(match)
@@ -67,10 +62,12 @@ func main() {
 	// fmt.Println(re10.MatchString("abcdefg"))
 	// fmt.Println(re10.MatchString("$"))
 
-	re11 := regexp.MustCompile(`(abc|ABC)(xyz|XYZ)`)
-	fmt.Println(re11.MatchString("abcxyz"))
-	fmt.Println(re11.MatchString("ABCXYZ"))
-	fmt.Println(re11.MatchString("ABCxyz"))
-	fmt.Println(re11.MatchString("abcXYZ"))
+	// re11 := regexp.MustCompile(`(abc|ABC)(xyz|XYZ)`)
+	// fmt.Println(re11.MatchString("abcxyz"))
+	// fmt.Println(re11.MatchString("ABCXYZ"))
+	// fmt.Println(re11.MatchString("ABCxyz"))
+	// fmt.Println(re11.MatchString("abcXYZ"))
+
+	// re12 := regexp.MustCompile(``)
 
 }
