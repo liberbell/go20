@@ -9,8 +9,11 @@ type User struct {
 	Name    string
 	Email   string
 	created time.Time
+	A       A
 }
 
 func main() {
 
+	u := new(User)
+	u.ID = 1
 }
