@@ -11,4 +11,6 @@ func main() {
 	io.WriteString(h, "ABCDE")
 	fmt.Println(h.Sum(nil))
 
+	s := fmt.Sprintf("%x", h.Sum(nil))
+	fmt.Println(s)
 }
