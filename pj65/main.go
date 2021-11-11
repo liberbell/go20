@@ -39,4 +39,7 @@ func main() {
 
 	re4 := regexp.MustCompile(`(abc|ABC)(xyz|XYZ)`)
 	fmt.Println(re4.Split("ASHVJV(HAKFABCXYZIDERPTEXABCXYZ)", -1))
+
+	re5 := regexp.MustCompile(`\s+`)
+	fmt.Println(re5.Split("aaaaaaaaaa     bbbbbb    ccccc", -1))
 }
