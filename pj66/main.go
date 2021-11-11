@@ -21,7 +21,7 @@ func UpdateAndPrint(n int) {
 	time.Sleep(time.Microsecond)
 	st.C = n
 	time.Sleep(time.Microsecond)
-	fmt.Println(st)
+	fmt.Println(st, st.A == st.B, st.B == st.C)
 
 	mutex.Unlock()
 }
