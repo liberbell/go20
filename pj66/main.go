@@ -26,6 +26,9 @@ func main() {
 				UpdateAndPrint(i)
 			}
 		}()
+	}
+
+	for {
 
 	}
 }
