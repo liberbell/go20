@@ -27,6 +27,8 @@ func UpdateAndPrint(n int) {
 }
 
 func main() {
+	mutex = new(sync.Mutex)
+
 	for i := 0; i < 5; i++ {
 		go func() {
 			for i := 0; i < 1000; i++ {
