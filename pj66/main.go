@@ -21,6 +21,11 @@ func UpdateAndPrint(n int) {
 
 func main() {
 	for i := 0; i < 5; i++ {
-		UpdateAndPrint(i)
+		go func() {
+			for i := 0; i < 1000; i++ {
+				UpdateAndPrint(i)
+			}
+		}()
+
 	}
 }
