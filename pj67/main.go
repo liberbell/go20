@@ -20,4 +20,8 @@ func main() {
 			fmt.Println("3rd Go routing.")
 		}
 	}()
+
+	for {
+
+	}
 }
