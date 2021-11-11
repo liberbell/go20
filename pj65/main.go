@@ -38,7 +38,7 @@ func main() {
 	fmt.Println(re3.ReplaceAllString("今日は、いい天気です。", "-"))
 
 	re4 := regexp.MustCompile(`(abc|ABC)(xyz|XYZ)`)
-	fmt.Println(re4.Split("ASHVJV(HAKFABCXYZIDERPTEXABCXYZ)", -1))
+	fmt.Println(re4.Split("ASHVJVHAKFABCXYZIDERPTEXABCXYZ)", -1))
 
 	re5 := regexp.MustCompile(`\s+`)
 	fmt.Println(re5.Split("aaaaaaaaaa     bbbbbb    ccccc", -1))
