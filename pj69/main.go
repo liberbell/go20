@@ -1,6 +1,11 @@
 package main
 
-import "time"
+import (
+	"encoding/json"
+	"fmt"
+	"log"
+	"time"
+)
 
 type A struct{}
 
@@ -19,4 +24,10 @@ func main() {
 	u.Name = "test"
 	u.Email = "test@example.com"
 	u.created = time.Now()
+
+	bs, err := json.Marshal(u)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(string(bs))
 }
