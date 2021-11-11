@@ -16,4 +16,7 @@ func main() {
 
 	u := new(User)
 	u.ID = 1
+	u.Name = "test"
+	u.Email = "test@example.com"
+	u.created = time.Now()
 }
