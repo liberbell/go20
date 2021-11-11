@@ -13,6 +13,8 @@ var st struct {
 var mutex *sync.Mutex
 
 func UpdateAndPrint(n int) {
+	mutex.Lock()
+
 	st.A = n
 	time.Sleep(time.Microsecond)
 	st.B = n
@@ -20,6 +22,8 @@ func UpdateAndPrint(n int) {
 	st.C = n
 	time.Sleep(time.Microsecond)
 	fmt.Println(st)
+
+	mutex.Unlock()
 }
 
 func main() {
