@@ -2,12 +2,15 @@ package main
 
 import (
 	"fmt"
+	"sync"
 	"time"
 )
 
 var st struct {
 	A, B, C int
 }
+
+var mutex *sync.Mutex
 
 func UpdateAndPrint(n int) {
 	st.A = n
