@@ -10,8 +10,8 @@ import (
 type A struct{}
 
 type User struct {
-	ID      int       `json:"id"`
-	Name    string    `json:"name"`
+	ID      int       `json:"id,omitempty"`
+	Name    string    `json:"name,omitempty"`
 	Email   string    `json:"email"`
 	Created time.Time `json:"created"`
 	A       A         `json:"A"`
@@ -20,8 +20,8 @@ type User struct {
 func main() {
 
 	u := new(User)
-	u.ID = 1
-	u.Name = "test"
+	u.ID = 0
+	u.Name = ""
 	u.Email = "test@example.com"
 	u.Created = time.Now()
 
