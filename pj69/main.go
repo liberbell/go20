@@ -10,11 +10,11 @@ import (
 type A struct{}
 
 type User struct {
-	ID      int
-	Name    string
-	Email   string
-	Created time.Time
-	A       A
+	ID      int       `json:"id"`
+	Name    string    `json:"name"`
+	Email   string    `json:"email"`
+	Created time.Time `json:"created"`
+	A       A         `json:"A"`
 }
 
 func main() {
