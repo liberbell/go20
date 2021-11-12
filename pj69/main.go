@@ -13,7 +13,7 @@ type User struct {
 	ID      int
 	Name    string
 	Email   string
-	created time.Time
+	Created time.Time
 	A       A
 }
 
@@ -23,7 +23,7 @@ func main() {
 	u.ID = 1
 	u.Name = "test"
 	u.Email = "test@example.com"
-	u.created = time.Now()
+	u.Created = time.Now()
 
 	bs, err := json.Marshal(u)
 	if err != nil {
