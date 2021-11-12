@@ -14,7 +14,7 @@ type User struct {
 	Name    string    `json:"name,omitempty"`
 	Email   string    `json:"email"`
 	Created time.Time `json:"created"`
-	A       A         `json:"A"`
+	A       *A        `json:"A,omitempty"`
 }
 
 func main() {
@@ -30,4 +30,14 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Println(string(bs))
+
+	fmt.Printf("%T\n", bs)
+
+	u2 := new(User)
+
+	if err := json.Unmarshal(bs, &us); err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(u2)
+
 }
