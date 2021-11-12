@@ -20,8 +20,8 @@ type User struct {
 func main() {
 
 	u := new(User)
-	u.ID = 0
-	u.Name = ""
+	u.ID = 1
+	u.Name = "test"
 	u.Email = "test@example.com"
 	u.Created = time.Now()
 
@@ -35,7 +35,7 @@ func main() {
 
 	u2 := new(User)
 
-	if err := json.Unmarshal(bs, &us); err != nil {
+	if err := json.Unmarshal(bs, &u2); err != nil {
 		fmt.Println(err)
 	}
 	fmt.Println(u2)
