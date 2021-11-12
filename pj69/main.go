@@ -34,10 +34,15 @@ func main() {
 	fmt.Printf("%T\n", bs)
 
 	u2 := new(User)
+	u3 := new(User)
 
 	if err := json.Unmarshal(bs, &u2); err != nil {
 		fmt.Println(err)
 	}
+	if err := json.Unmarshal(bs, u3); err != nil {
+		fmt.Println(err)
+	}
 	fmt.Println(u2)
+	fmt.Println(u3)
 
 }
