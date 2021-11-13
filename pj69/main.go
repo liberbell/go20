@@ -26,7 +26,7 @@ func (u User) MarshalJSON() ([]byte, error) {
 	return v, err
 }
 
-func (u *User) UnmarshalJSON(b, []byte) error {
+func (u *User) UnmarshalJSON(b []byte) error {
 	type User2 struct {
 		Name string
 	}
