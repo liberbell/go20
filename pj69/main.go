@@ -18,7 +18,12 @@ type User struct {
 }
 
 func (u User) MarshalJson() ([]byte, error) {
-
+	v, err := json.Marshal(&struct {
+		Name string
+	}{
+		Name: "Mr " + u.Name,
+	})
+	return v, err
 }
 
 func main() {
