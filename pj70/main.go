@@ -1,8 +1,10 @@
 package main
 
+import "fmt"
+
 type Entry struct {
 	Name  string
-	value int
+	Value int
 }
 
 func main() {
@@ -24,4 +26,5 @@ func main() {
 		{"c": 30},
 		{"w": 30},
 	}
+	fmt.Println(el)
 }
