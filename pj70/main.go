@@ -31,7 +31,7 @@ func main() {
 	}
 	fmt.Println(el)
 
-	sort.Slice(el, func(i, j int) bool { return el[i].Name < el[j] })
+	sort.Slice(el, func(i, j int) bool { return el[i].Name < el[j].Name })
 	fmt.Println("-----------")
 	fmt.Println(el)
 	fmt.Println("-----------")
