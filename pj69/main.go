@@ -17,6 +17,10 @@ type User struct {
 	A       *A        `json:"A,omitempty"`
 }
 
+func (u User) MarshalJson() ([]byte, error) {
+
+}
+
 func main() {
 
 	u := new(User)
