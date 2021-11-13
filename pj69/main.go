@@ -10,8 +10,8 @@ import (
 type A struct{}
 
 type User struct {
-	ID      int       `json:"id,omitempty"`
-	Name    string    `json:"name,omitempty"`
+	ID      int       `json:"id"`
+	Name    string    `json:"name"`
 	Email   string    `json:"email"`
 	Created time.Time `json:"created"`
 	A       *A        `json:"A,omitempty"`
