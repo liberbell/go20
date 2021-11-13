@@ -14,4 +14,14 @@ func main() {
 	// sort.Ints(i)
 	// sort.Strings(s)
 	// fmt.Println(i, s)
+	el := []Entry{
+		{"A": 20},
+		{"B": 40},
+		{"C": 30},
+		{"D": 10},
+		{"E": 15},
+		{"F": 30},
+		{"G": 30},
+		{"H": 30},
+	}
 }
