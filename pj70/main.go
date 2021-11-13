@@ -35,4 +35,9 @@ func main() {
 	fmt.Println("-----------")
 	fmt.Println(el)
 	fmt.Println("-----------")
+
+	sort.SliceStable(el, func(i, j int) bool { return el[i].Name > el[i].Name })
+	fmt.Println("-----------")
+	fmt.Println(el)
+	fmt.Println("-----------")
 }
