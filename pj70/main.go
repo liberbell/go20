@@ -31,13 +31,14 @@ func main() {
 	}
 	fmt.Println(el)
 
-	// sort.Slice(el, func(i, j int) bool { return el[i].Name < el[j].Name })
-	// fmt.Println("-----------")
-	// fmt.Println(el)
-	// fmt.Println("-----------")
-
-	sort.SliceStable(el, func(i, j int) bool { return el[i].Name < el[i].Name })
+	sort.Slice(el, func(i, j int) bool { return el[i].Name < el[j].Name })
+	sort.Slice(el, func(i, j int) bool { return el[i].Value < el[j].Value })
 	fmt.Println("-----------")
 	fmt.Println(el)
 	fmt.Println("-----------")
+
+	// sort.SliceStable(el, func(i, j int) bool { return el[i].Name < el[j].Name })
+	// fmt.Println("-----------")
+	// fmt.Println(el)
+	// fmt.Println("-----------")
 }
