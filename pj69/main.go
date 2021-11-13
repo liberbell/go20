@@ -26,6 +26,10 @@ func (u User) MarshalJSON() ([]byte, error) {
 	return v, err
 }
 
+func (u User) UnmarshalJSON(b, []byte) error {
+	v, err
+}
+
 func main() {
 
 	u := new(User)
