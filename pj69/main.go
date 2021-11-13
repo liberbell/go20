@@ -17,7 +17,7 @@ type User struct {
 	A       *A        `json:"A,omitempty"`
 }
 
-func (u User) MarshalJson() ([]byte, error) {
+func (u User) MarshalJSON() ([]byte, error) {
 	v, err := json.Marshal(&struct {
 		Name string
 	}{
