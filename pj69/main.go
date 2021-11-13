@@ -26,8 +26,17 @@ func (u User) MarshalJSON() ([]byte, error) {
 	return v, err
 }
 
-func (u User) UnmarshalJSON(b, []byte) error {
-	v, err
+func (u *User) UnmarshalJSON(b, []byte) error {
+	type User2 struct {
+		Name string
+	}
+	var u2 User2
+	err := json.Unmarshal(b, &u2)
+	if err != nil {
+		fmt.Println(err)
+	}
+	u.Name = u2.Name + "!"
+	return err
 }
 
 func main() {
