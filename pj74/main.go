@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"net/url"
 )
 
 func main() {
@@ -19,4 +20,9 @@ func main() {
 	defer res.Body.Close()
 	body, _ := ioutil.ReadAll(res.Body)
 	fmt.Println(string(body))
+
+	vs := url.Values{}
+	vs.Add("id", "1")
+	vs.Add("message", "Message")
+	fmt.Println(vs.Encode())
 }
