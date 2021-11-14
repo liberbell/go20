@@ -41,4 +41,7 @@ func main() {
 
 	fmt.Println(lt)
 
+	sort.Sort(sort.Reverse(lt))
+	fmt.Println(lt)
+
 }
