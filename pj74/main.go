@@ -10,4 +10,8 @@ func main() {
 	fmt.Println(res.StatusCode)
 	fmt.Println(res.Proto)
 	fmt.Println(res.Header["Date"])
+	fmt.Println(res.Header["Content-Type"])
+
+	fmt.Println(res.Request.Method)
+	fmt.Println(res.Request.URL)
 }
