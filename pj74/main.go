@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 	"net/http"
 )
 
@@ -14,4 +15,8 @@ func main() {
 
 	fmt.Println(res.Request.Method)
 	fmt.Println(res.Request.URL)
+
+	defer res.Body.Close()
+	body, _ := ioutil.ReadAll(res.Body)
+	fmt.Println(body)
 }
