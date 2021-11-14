@@ -6,8 +6,12 @@ type Entry struct {
 }
 
 func (l List) Less(i, j int) bool {
-	
-}n
+	if l[i].Value == l[j].Value {
+		return (l[i].Name < l[j].Name)
+	} else {
+		return (l[i].Value < l[j].Value)
+	}
+}
 
 type List []Entry
 
