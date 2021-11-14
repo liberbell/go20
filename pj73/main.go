@@ -14,4 +14,11 @@ func main() {
 	fmt.Println(u.Fragment)
 
 	fmt.Println(u.Query())
+
+	url := &url.URL{}
+	url.Scheme = "https:"
+	url.Host = "google.com"
+	q := url.Query()
+
+	q.Set("q", "Golang")
 }
