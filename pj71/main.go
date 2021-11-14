@@ -12,6 +12,10 @@ type Entry struct {
 
 type List []Entry
 
+func (l List) Len() int {
+	return len(l)
+}
+
 func (l List) Less(i, j int) bool {
 	if l[i].Value == l[j].Value {
 		return (l[i].Name < l[j].Name)
