@@ -15,4 +15,7 @@ func longProcess(ctx context.Context, ch chan string) {
 
 func main() {
 	ch := make(chan string)
+	ctx := context.Background()
+
+	ctx, cancel := context.WithTimeout(ctx, 1*time.Second)
 }
