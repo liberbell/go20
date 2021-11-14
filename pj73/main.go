@@ -21,4 +21,7 @@ func main() {
 	q := url.Query()
 
 	q.Set("q", "Golang")
+	url.RawQuery = q.Encode()
+
+	fmt.Println(url)
 }
