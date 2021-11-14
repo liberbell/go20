@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"sort"
+)
+
 type Entry struct {
 	Name  string
 	Value int
@@ -22,5 +27,9 @@ func main() {
 		e := Entry{k, v}
 		lt = append(lt, e)
 	}
+
+	sort.Sort(lt)
+
+	fmt.Println(lt)
 
 }
