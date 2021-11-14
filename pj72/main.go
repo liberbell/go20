@@ -22,9 +22,17 @@ func main() {
 	defer cancel()
 	go longProcess(ctx, ch)
 
+L:
 	for {
 		select {
 		case <-ctx.Done():
+			fmt.Println("###### ERROR ######")
+			fmt.Println(ctx.Err())
+			break L
+		case s := <-ch:
+			fmt.Println(s)
+			fmt.Println("SUCCESS")
+			break L
 		}
 	}
 }
