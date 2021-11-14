@@ -35,4 +35,5 @@ L:
 			break L
 		}
 	}
+	fmt.Println("LOOP END")
 }
