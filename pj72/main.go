@@ -17,7 +17,7 @@ func main() {
 	ch := make(chan string)
 	ctx := context.Background()
 
-	ctx, cancel := context.WithTimeout(ctx, 1*time.Second)
+	ctx, cancel := context.WithTimeout(ctx, 3*time.Second)
 
 	defer cancel()
 	go longProcess(ctx, ch)
