@@ -10,4 +10,8 @@ func main() {
 	fmt.Println(u.Scheme)
 	fmt.Println(u.Host)
 	fmt.Println(u.Path)
+	fmt.Println(u.RawQuery)
+	fmt.Println(u.Fragment)
+
+	fmt.Println(u.Query())
 }
