@@ -18,4 +18,13 @@ func main() {
 	ctx := context.Background()
 
 	ctx, cancel := context.WithTimeout(ctx, 1*time.Second)
+
+	defer cancel()
+	go longProcess(ctx, ch)
+
+	for {
+		select {
+		case <-ctx.Done():
+		}
+	}
 }
