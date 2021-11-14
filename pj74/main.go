@@ -2,6 +2,9 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
+	"log"
+	"net/http"
 	"net/url"
 )
 
@@ -23,4 +26,12 @@ func main() {
 	vs.Add("id", "1")
 	vs.Add("message", "Message")
 	fmt.Println(vs.Encode())
+
+	res, err := http.PostForm("https://example.com", vs)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer res.Body.Close()
+	body, _ := ioutil.ReadAll(res.Body)
+	fmt.Println(string(body))
 }
