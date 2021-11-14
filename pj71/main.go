@@ -5,6 +5,10 @@ type Entry struct {
 	Value int
 }
 
+func (l List) Less(i, j int) bool {
+	
+}n
+
 type List []Entry
 
 func main() {
