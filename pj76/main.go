@@ -13,9 +13,9 @@ func main() {
 	Db, _ := sql.Open("sqlite3", "./example.sql")
 	defer Db.Close()
 
-	cmd := `CREATE TABLE IF NOT EXISTS person(
+	cmd := `CREATE TABLE IF NOT EXISTS persons(
 			name STRING,
-			age INT)`
+			age  INT)`
 
 	_, err := Db.Exec(cmd)
 
