@@ -21,5 +21,6 @@ func top(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	http.HandleFunc("/top", top)
 	http.ListenAndServe(":8000", nil)
 }
