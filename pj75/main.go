@@ -8,7 +8,7 @@ import (
 type MyHandler struct{}
 
 func (h *MyHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	fmt.Println(w, "Hello World.")
+	fmt.Fprintf(w, "Hello World.")
 }
 
 // func top(w http.ResponseWriter, r *http.Request) {
