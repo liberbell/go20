@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"html/template"
 	"log"
 	"net/http"
@@ -9,9 +8,9 @@ import (
 
 type MyHandler struct{}
 
-func (h *MyHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello World.")
-}
+// func (h *MyHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+// 	fmt.Fprintf(w, "Hello World.")
+// }
 
 func top(w http.ResponseWriter, r *http.Request) {
 	t, err := template.ParseFiles("tepl.html")
@@ -22,5 +21,5 @@ func top(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.ListenAndServe(":8000", &MyHandler{})
+	http.ListenAndServe(":8000", nil)
 }
