@@ -1,6 +1,9 @@
 package main
 
-import "database/sql"
+import (
+	"database/sql"
+	"log"
+)
 
 var Db *sql.DB
 
@@ -11,4 +14,10 @@ func main() {
 	cmd := `CREATE TABLE IF NOT EXISTS person(
 			name STRING,
 			age INT)`
+
+	_, err := Db.Exec(cmd)
+
+	if err != nil {
+		log.Fatal(err)
+	}
 }
