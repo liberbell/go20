@@ -10,12 +10,12 @@ import (
 var Db *sql.DB
 
 func main() {
-	Db, _ := sql.Open("sqlite3", "./exampl.sql")
+	Db, _ := sql.Open("sqlite3", "./example.sql")
 	defer Db.Close()
 
 	cmd := "INSERT INTO persons (name, age) VALUES (?, ?)"
 	_, err := Db.Exec(cmd, "Bob", 47)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatalln(err)
 	}
 }
