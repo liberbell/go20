@@ -1,0 +1,25 @@
+package main
+
+import (
+	"database/sql"
+	"fmt"
+	"log"
+)
+
+func main() {
+	Db, _ := sql.Open("sqlite3", "./example.sql")
+	defer Db.Close()
+
+	cmd := "SELECT * FROM persons WHERE age = ?"
+	row := Db.QueryRow(cmd, 55)
+	var p Person
+	err := row.Scan(&p.Name, &p.Age)
+	if err != nil {
+		if err == sql.ErrNoRows {
+			fmt.Println("No Row")
+		} else {
+			log.Println(err)
+		}
+	}
+
+}
