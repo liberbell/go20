@@ -2,6 +2,8 @@ package main
 
 import (
 	"database/sql"
+	"fmt"
+	"log"
 
 	_ "github.com/mattn/go-sqlite3"
 )
@@ -38,6 +40,13 @@ func main() {
 	for rows.Next() {
 		var p Person
 		err := rows.Scan(&p.Name, &p.Age)
+		if err != nil {
+			log.Println(err)
+		}
+		pp = append(pp, p)
+	}
+	for _, p := range pp {
+		fmt.Println(p.Name, p.Age)
 	}
 
 }
