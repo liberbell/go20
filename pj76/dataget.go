@@ -4,7 +4,16 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
+
+	_ "github.com/mattn/go-sqlite3"
 )
+
+var Db *sql.DB
+
+type Person struct {
+	Name string
+	Age  int
+}
 
 func main() {
 	Db, _ := sql.Open("sqlite3", "./example.sql")
