@@ -15,7 +15,7 @@ type Person struct {
 }
 
 func main() {
-	Db, _ := sql.Open("postgres", "user= dbname=test_db1 password=")
+	Db, _ := sql.Open("postgres", "user=test_user1 dbname=testdb1 password=user1pass sslmode=disable")
 	defer Db.Close()
 
 	fmt.Println("a")
