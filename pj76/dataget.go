@@ -21,5 +21,6 @@ func main() {
 			log.Println(err)
 		}
 	}
+	fmt.Println(p.Name, p.Age)
 
 }
