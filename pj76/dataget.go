@@ -34,5 +34,10 @@ func main() {
 
 	rows, _ := Db.Query(cmd)
 	defer rows.Close()
+	var pp []Person
+	for rows.Next() {
+		var p Person
+		err := rows.Scan(&p.Name, &p.Age)
+	}
 
 }
