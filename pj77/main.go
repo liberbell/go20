@@ -56,5 +56,12 @@ func main() {
 		}
 		pp = append(pp, p)
 	}
+	err = rows.Err()
+	if err != nil {
+		log.Fatalln(err)
+	}
+	for _, p := range pp {
+		fmt.Println(p.Name, p.Age)
+	}
 
 }
