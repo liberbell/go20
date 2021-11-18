@@ -48,5 +48,13 @@ func main() {
 	defer rows.Close()
 
 	var pp []Person
+	for rows.Next() {
+		var p Person
+		err := rows.Scan(&p.Name, &p.Age)
+		if err != nil {
+			log.Println(err)
+		}
+		pp = append(pp, p)
+	}
 
 }
