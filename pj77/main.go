@@ -23,9 +23,15 @@ func main() {
 	}
 	defer Db.Close()
 
-	cmd := "INSERT INTO persons (name, age) VALUES ($1, $2)"
-	_, err := Db.Exec(cmd, "Bob", 47)
-	if err != nil {
-		log.Fatalln(err)
-	}
+	// cmd := "INSERT INTO persons (name, age) VALUES ($1, $2)"
+	// _, err := Db.Exec(cmd, "Bob", 47)
+	// if err != nil {
+	// 	log.Fatalln(err)
+	// }
+
+	cmd := "SELECT * FROM persons WHERE age = ?"
+	row := Db.QueryRow(cmd, 1000)
+	var p Person
+	err := row.Scan(&p.Name, &p.Age)
+
 }
