@@ -2,7 +2,6 @@ package main
 
 import (
 	"database/sql"
-	"fmt"
 	"log"
 
 	_ "github.com/lib/pq"
@@ -24,5 +23,9 @@ func main() {
 	}
 	defer Db.Close()
 
-	fmt.Println("a")
+	cmd := "INSERT INTO persons (name, age) VALUES ($1, $2)"
+	_, err := Db.Exec(cmd, "Bob", 47)
+	if err != nil {
+		log.Fatalln(err)
+	}
 }
