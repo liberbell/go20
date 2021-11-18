@@ -1,6 +1,10 @@
 package main
 
-import "gopkg.in/go-ini/ini.v1"
+import (
+	"fmt"
+
+	"gopkg.in/go-ini/ini.v1"
+)
 
 type ConfigList struct {
 	Port      int
@@ -20,5 +24,7 @@ func init() {
 }
 
 func main() {
-
+	fmt.Printf("Port      = %v\n", Config.Port)
+	fmt.Printf("DbName    = %v\n", Config.DbName)
+	fmt.Printf("SQLDriver = %v\n", Config.SQLDriver)
 }
