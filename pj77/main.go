@@ -33,5 +33,11 @@ func main() {
 	row := Db.QueryRow(cmd, 1000)
 	var p Person
 	err := row.Scan(&p.Name, &p.Age)
-
+	if err != nil {
+		if err == sql.ErrNoRows {
+			log.Println("No row")
+		} else {
+			log.Println(err)
+		}
+	}
 }
