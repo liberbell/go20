@@ -43,8 +43,8 @@ func main() {
 	}
 	fmt.Println(p.Name, p.Age)
 
-	cmd1 := "SELECT * FROM persons"
-	rows, _ := Db.Query(cmd1)
+	cmd = "SELECT * FROM persons"
+	rows, _ := Db.Query(cmd)
 	defer rows.Close()
 
 	var pp []Person
