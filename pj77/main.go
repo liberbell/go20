@@ -64,7 +64,7 @@ func main() {
 	// }
 
 	cmd := "UPDATE persons SET age = $1 WHERE name = $2"
-	_, err := Db.Exec(cmd, 47, "Bob")
+	_, err := Db.Exec(cmd, 55, "Bob")
 	if err != nil {
 		log.Fatalln(err)
 	}
