@@ -42,4 +42,6 @@ func main() {
 		}
 	}
 	fmt.Println(p.Name, p.Age)
+
+	cmd1 := "SELECT * FROM persons"
 }
