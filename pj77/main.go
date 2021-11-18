@@ -31,7 +31,7 @@ func main() {
 	// }
 
 	cmd := "SELECT * FROM persons WHERE age = ?"
-	row := Db.QueryRow(cmd, 1000)
+	row := Db.QueryRow(cmd, 47)
 	var p Person
 	err := row.Scan(&p.Name, &p.Age)
 	if err != nil {
