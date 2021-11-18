@@ -2,7 +2,6 @@ package main
 
 import (
 	"database/sql"
-	"fmt"
 	"log"
 
 	_ "github.com/lib/pq"
@@ -30,38 +29,44 @@ func main() {
 	// 	log.Fatalln(err)
 	// }
 
-	cmd := "SELECT * FROM persons WHERE age = $1"
-	row := Db.QueryRow(cmd, 47)
-	var p Person
-	err = row.Scan(&p.Name, &p.Age)
-	if err != nil {
-		if err == sql.ErrNoRows {
-			log.Println("No row")
-		} else {
-			log.Println(err)
-		}
-	}
-	fmt.Println(p.Name, p.Age)
+	// cmd := "SELECT * FROM persons WHERE age = $1"
+	// row := Db.QueryRow(cmd, 47)
+	// var p Person
+	// err = row.Scan(&p.Name, &p.Age)
+	// if err != nil {
+	// 	if err == sql.ErrNoRows {
+	// 		log.Println("No row")
+	// 	} else {
+	// 		log.Println(err)
+	// 	}
+	// }
+	// fmt.Println(p.Name, p.Age)
 
-	cmd = "SELECT * FROM persons"
-	rows, _ := Db.Query(cmd)
-	defer rows.Close()
+	// cmd = "SELECT * FROM persons"
+	// rows, _ := Db.Query(cmd)
+	// defer rows.Close()
 
-	var pp []Person
-	for rows.Next() {
-		var p Person
-		err := rows.Scan(&p.Name, &p.Age)
-		if err != nil {
-			log.Println(err)
-		}
-		pp = append(pp, p)
-	}
-	err = rows.Err()
+	// var pp []Person
+	// for rows.Next() {
+	// 	var p Person
+	// 	err := rows.Scan(&p.Name, &p.Age)
+	// 	if err != nil {
+	// 		log.Println(err)
+	// 	}
+	// 	pp = append(pp, p)
+	// }
+	// err = rows.Err()
+	// if err != nil {
+	// 	log.Fatalln(err)
+	// }
+	// for _, p := range pp {
+	// 	fmt.Println(p.Name, p.Age)
+	// }
+
+	cmd := "UPDATE persons SET age = $1 WHERE name = $2"
+	_, err := Db.Exec(cmd, 47, "Bob")
 	if err != nil {
 		log.Fatalln(err)
-	}
-	for _, p := range pp {
-		fmt.Println(p.Name, p.Age)
 	}
 
 }
