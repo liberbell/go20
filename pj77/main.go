@@ -63,8 +63,14 @@ func main() {
 	// 	fmt.Println(p.Name, p.Age)
 	// }
 
-	cmd := "UPDATE persons SET age = $1 WHERE name = $2"
-	_, err := Db.Exec(cmd, 55, "Bob")
+	// cmd := "UPDATE persons SET age = $1 WHERE name = $2"
+	// _, err := Db.Exec(cmd, 55, "Bob")
+	// if err != nil {
+	// 	log.Fatalln(err)
+	// }
+
+	cmd := "DELETE FROM persons WHERE name = $1"
+	_, err := Db.Exec(cmd, "Bob")
 	if err != nil {
 		log.Fatalln(err)
 	}
