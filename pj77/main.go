@@ -30,7 +30,7 @@ func main() {
 	// 	log.Fatalln(err)
 	// }
 
-	cmd := "SELECT * FROM persons WHERE age = ?"
+	cmd := "SELECT * FROM persons WHERE age = $1"
 	row := Db.QueryRow(cmd, 47)
 	var p Person
 	err = row.Scan(&p.Name, &p.Age)
