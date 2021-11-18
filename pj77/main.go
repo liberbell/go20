@@ -2,6 +2,7 @@ package main
 
 import (
 	"database/sql"
+	"fmt"
 	"log"
 
 	_ "github.com/lib/pq"
@@ -40,4 +41,5 @@ func main() {
 			log.Println(err)
 		}
 	}
+	fmt.Println(p.Name, p.Age)
 }
