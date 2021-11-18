@@ -33,7 +33,7 @@ func main() {
 	cmd := "SELECT * FROM persons WHERE age = ?"
 	row := Db.QueryRow(cmd, 47)
 	var p Person
-	err := row.Scan(&p.Name, &p.Age)
+	err = row.Scan(&p.Name, &p.Age)
 	if err != nil {
 		if err == sql.ErrNoRows {
 			log.Println("No row")
