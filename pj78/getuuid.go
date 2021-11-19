@@ -9,4 +9,7 @@ import (
 func main() {
 	uuidobj, _ := uuid.NewUUID()
 	fmt.Println("   ", uuidobj.String())
+
+	uuidobj2, _ := uuid.NewRandom()
+	fmt.Println("   ", uuidobj2)
 }
