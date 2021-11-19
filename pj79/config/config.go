@@ -6,3 +6,5 @@ type ConfigList struct {
 	SQLDriver string
 	LogFile   string
 }
+
+var Config ConfigList
