@@ -18,4 +18,6 @@ func (u *User) CreateUser() (err error) {
 		email,
 		password,
 		created_at) values (?, ?, ?, ?, ?)`
+
+	_, err := Db.Exec
 }
