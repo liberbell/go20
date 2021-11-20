@@ -12,5 +12,10 @@ type User struct {
 }
 
 func (u *User) CreateUser() (err error) {
-
+	cmd := `INSERT INTO users (
+		uuid,
+		name,
+		email,
+		password,
+		created_at) values (?, ?, ?, ?, ?)`
 }
