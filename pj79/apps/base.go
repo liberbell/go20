@@ -30,4 +30,6 @@ func init() {
 		email STRING,
 		password STRING,
 		created_at DATETIME)`, tableNameUser)
+
+	Db.Exec(cmd)
 }
