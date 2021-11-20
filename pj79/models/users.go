@@ -10,3 +10,7 @@ type User struct {
 	Password  string
 	CreatedAt time.Time
 }
+
+func (u *User) CreateUser() (err error) {
+
+}
