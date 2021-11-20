@@ -2,6 +2,8 @@ package models
 
 import (
 	"database/sql"
+	"fmt"
+	"log"
 
 	"pj79/config"
 
@@ -18,4 +20,14 @@ const (
 
 func init() {
 	Db, err := sql.Open(config.Config.SQLDriver, config.Config.DbName)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	cmd := fmt.Sprintf(`CREATE TABLE IF NOT EXISTS %s(
+		id INTEGER PRIMARY KEY AUTOINCREMENT,
+		uuid STRING NOT NULL UNIQUE,
+		name STRING,
+		email STRING,
+		password STRING,
+		created_at DATETIME)`, tableNameUser)
 }
