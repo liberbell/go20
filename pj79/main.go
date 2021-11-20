@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/mgechev/revive/config"
+	"pj79/config"
 )
 
 func main() {
