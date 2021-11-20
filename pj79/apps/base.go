@@ -3,7 +3,9 @@ package models
 import (
 	"database/sql"
 
-	"github.com/tommy-muehle/go-mnd/config"
+	"pj79/config"
+
+	_ "github.com/mattn/go-sqlite3"
 )
 
 var Db *sql.DB
