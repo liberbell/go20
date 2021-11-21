@@ -1,6 +1,9 @@
 package models
 
-import "time"
+import (
+	"log"
+	"time"
+)
 
 type User struct {
 	ID        int
@@ -19,11 +22,15 @@ func (u *User) CreateUser() (err error) {
 		password,
 		created_at) values (?, ?, ?, ?, ?)`
 
-	_, err := Db.Exec(cmd,
+	_, err = Db.Exec(cmd,
 		createUUID,
 		u.Name,
 		u.Email,
 		Encrypt(u.Password),
 		time.Now())
 
+	if err != nil {
+		log.Fatalf(err)
+	}
+	return err
 }
