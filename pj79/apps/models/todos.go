@@ -27,3 +27,7 @@ func (u *User) CreateTodos(content string) (err error) {
 	}
 	return err
 }
+
+func GetTod(id int) (todo Todo, err error) {
+	cmd := `SELECT id, content, user_id, created_at FROM todos WHERE ID = ?`
+}
