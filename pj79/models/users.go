@@ -19,6 +19,11 @@ func (u *User) CreateUser() (err error) {
 		password,
 		created_at) values (?, ?, ?, ?, ?)`
 
-	_, err := Db.Exec()
+	_, err := Db.Exec(cmd,
+		createUUID,
+		u.Name,
+		u.Email,
+		Encrypt(u.Password),
+		time.Now())
 
 }
