@@ -23,7 +23,7 @@ func init() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	cmd := fmt.Sprintf(`CREATE TABLE IF NOT EXISTS %s(
+	cmdU := fmt.Sprintf(`CREATE TABLE IF NOT EXISTS %s(
 		id INTEGER PRIMARY KEY AUTOINCREMENT,
 		uuid STRING NOT NULL UNIQUE,
 		name STRING,
@@ -31,5 +31,5 @@ func init() {
 		password STRING,
 		created_at DATETIME)`, tableNameUser)
 
-	Db.Exec(cmd)
+	Db.Exec(cmdU)
 }
