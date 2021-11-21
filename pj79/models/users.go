@@ -1,9 +1,12 @@
 package models
 
 import (
+	"database/sql"
 	"log"
 	"time"
 )
+
+var Db *sql.DB
 
 type User struct {
 	ID        int
