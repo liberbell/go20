@@ -23,7 +23,7 @@ func main() {
 
 	u.CreateUser()
 
-	u, _ := models.GetUser(1)
+	// u, _ := models.GetUser(1)
 	// fmt.Println(u)
 
 	// u.Name = "test01rev2"
@@ -36,5 +36,8 @@ func main() {
 	// u.DeleteUser()
 	// u, _ = models.GetUser(1)
 	// fmt.Println(u)
+
+	user, _ := models.GetUser(2)
+	user.CreateTodos("First Todo")
 
 }
