@@ -48,4 +48,5 @@ func GetUser(id int) (user User, err error) {
 		&user.Password,
 		&user.CreatedAt,
 	)
+	return user, err
 }
