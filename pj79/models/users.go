@@ -30,7 +30,7 @@ func (u *User) CreateUser() (err error) {
 		time.Now())
 
 	if err != nil {
-		log.Fatalf(err)
+		log.Fatalln(err)
 	}
 	return err
 }
