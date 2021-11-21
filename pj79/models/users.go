@@ -59,3 +59,7 @@ func (u *User) UpdateUser() (err error) {
 	}
 	return err
 }
+
+func (u *User) DeleteUser() (err error) {
+	cmd := `DELETE users set name = ? WHERE id = ?`
+}
