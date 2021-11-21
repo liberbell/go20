@@ -23,7 +23,10 @@ func main() {
 
 	// u.CreateUser()
 
-	u, _ := models.GetUser(1)
-	fmt.Println(u)
+	// u, _ := models.GetUser(1)
+	// fmt.Println(u)
+
+	u.Name = "test01rev2"
+	u.Email = "test01rev2@example.com"
 
 }
