@@ -48,4 +48,7 @@ func GetTodos() (todos []Todo, err error) {
 	if err != nil {
 		log.Fatalln(err)
 	}
+	for rows.Next() {
+		var todo Todo
+	}
 }
