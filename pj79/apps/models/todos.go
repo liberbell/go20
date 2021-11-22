@@ -50,5 +50,6 @@ func GetTodos() (todos []Todo, err error) {
 	}
 	for rows.Next() {
 		var todo Todo
+		err = rows.Scan(&todo.ID, &todo.Content, &todo.UserID, &todo.created_at)
 	}
 }
