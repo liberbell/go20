@@ -30,4 +30,8 @@ func (u *User) CreateTodos(content string) (err error) {
 
 func GetTod(id int) (todo Todo, err error) {
 	cmd := `SELECT id, content, user_id, created_at FROM todos WHERE ID = ?`
+
+	todo = Todo{}
+
+	err = Db.QueryRow(cmd, id).Scan(&todo.ID)
 }
