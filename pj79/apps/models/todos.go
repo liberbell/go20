@@ -33,5 +33,11 @@ func GetTod(id int) (todo Todo, err error) {
 
 	todo = Todo{}
 
-	err = Db.QueryRow(cmd, id).Scan(&todo.ID)
+	err = Db.QueryRow(cmd, id).Scan(
+		&todo.ID,
+		&todo.Content,
+		&todo.UserID,
+		&todo.created_at)
+
+	return todo, err
 }
