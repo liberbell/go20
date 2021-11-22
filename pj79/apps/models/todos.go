@@ -41,3 +41,7 @@ func GetTodo(id int) (todo Todo, err error) {
 
 	return todo, err
 }
+
+func GetTodos() (todos []Todo, err error) {
+	cmd := `SELECT`
+}
