@@ -79,7 +79,7 @@ func (u *User) GetTodosByUser() (todos []Todo, err error) {
 			log.Fatalln(err)
 		}
 		todos = append(todos, todo)
-		rows.Close()
-		return todos, err
 	}
+	rows.Close()
+	return todos, err
 }
