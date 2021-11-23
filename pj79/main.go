@@ -43,12 +43,15 @@ func main() {
 	// t, _ := models.GetTodo(1)
 	// fmt.Println(t)
 
-	user, _ := models.GetUser(2)
-	user.CreateTodos("Second Todo")
+	// user, _ := models.GetUser(2)
+	// user.CreateTodos("Second Todo")
 
-	todos, _ := models.GetTodos()
-	for _, v := range todos {
-		fmt.Println(v)
-	}
+	// todos, _ := models.GetTodos()
+	// for _, v := range todos {
+	// 	fmt.Println(v)
+	// }
+
+	user, _ := models.GetUser(3)
+	user.CreateTodos("Third Todo")
 
 }
