@@ -99,4 +99,5 @@ func (t *Todo) DeleteTodo() error {
 	if err != nil {
 		log.Fatalln(err)
 	}
+	return err
 }
