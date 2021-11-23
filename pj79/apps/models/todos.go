@@ -62,3 +62,7 @@ func GetTodos() (todos []Todo, err error) {
 	rows.Close()
 	return todos, err
 }
+
+func (u *User) GetTodosByUser() (todos []Todo) {
+
+}
