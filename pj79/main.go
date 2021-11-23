@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"pj79/apps/controllers"
 	"pj79/apps/models"
 )
 
@@ -67,4 +68,5 @@ func main() {
 	// t, _ := models.GetTodo(3)
 	// t.DeleteTodo()
 
+	controllers.StartMainServer()
 }
