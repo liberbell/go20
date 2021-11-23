@@ -43,7 +43,7 @@ func GetTodo(id int) (todo Todo, err error) {
 }
 
 func GetTodos() (todos []Todo, err error) {
-	cmd := `SELECT id, contetn, user_id, created_at FROM todos`
+	cmd := `SELECT id, content, user_id, created_at FROM todos`
 	rows, err := Db.Query(cmd)
 	if err != nil {
 		log.Fatalln(err)
