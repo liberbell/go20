@@ -90,4 +90,5 @@ func (t *Todo) UpdateTodo() error {
 	if err != nil {
 		log.Fatalln(err)
 	}
+	return err
 }
