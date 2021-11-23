@@ -57,5 +57,8 @@ func GetTodos() (todos []Todo, err error) {
 		if err != nil {
 			log.Fatalln(err)
 		}
+		todos = append(todos, todo)
 	}
+	rows.Close()
+	return todos, err
 }
