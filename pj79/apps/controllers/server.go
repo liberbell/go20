@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"fmt"
+	"html/template"
 	"net/http"
 	"pj79/config"
 )
@@ -11,6 +12,9 @@ func GenerateHTML(w http.ResponseWriter, data interface{}, filenames ...string) 
 	for _, file := range filenames {
 		files = append(files, fmt.Sprintf("apps/views/templates/%s.html", file))
 	}
+
+	templates := template.Must(template.ParseFiles(files...))
+	templates.ExecuteTemplate(w, "layout", data)
 }
 
 func StartMainServer() error {
