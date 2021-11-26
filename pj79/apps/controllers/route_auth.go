@@ -12,11 +12,15 @@ func signup(w http.ResponseWriter, r *http.Request) {
 	} else if r.Method == "POST" {
 		err := r.ParseForm()
 		if err != nil {
-			log.Fatalln(err)
+			log.Println(err)
 		}
 		user := models.User{
-			Name: r.PostFormValue("name"),
-			Email: r.PostFormValue("email")
+			Name:     r.PostFormValue("name"),
+			Email:    r.PostFormValue("email"),
+			Password: r.PostFormValue("password"),
+		}
+		if err := user.CreateUser(); err != nil {
+			log.Println(err)
 		}
 	}
 
