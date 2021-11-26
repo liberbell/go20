@@ -2,15 +2,15 @@ package main
 
 import (
 	"fmt"
-	"pj79/apps/controllers"
 	"pj79/apps/models"
+	"pj79/config"
 )
 
 func main() {
-	// fmt.Println(config.Config.Port)
-	// fmt.Println(config.Config.SQLDriver)
-	// fmt.Println(config.Config.DbName)
-	// fmt.Println(config.Config.LogFile)
+	fmt.Println(config.Config.Port)
+	fmt.Println(config.Config.SQLDriver)
+	fmt.Println(config.Config.DbName)
+	fmt.Println(config.Config.LogFile)
 
 	// log.Println("test")
 
@@ -68,5 +68,5 @@ func main() {
 	// t, _ := models.GetTodo(3)
 	// t.DeleteTodo()
 
-	controllers.StartMainServer()
+	// controllers.StartMainServer()
 }
