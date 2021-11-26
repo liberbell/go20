@@ -10,5 +10,5 @@ func top(w http.ResponseWriter, r *http.Request) {
 	// 	log.Fatalln(err)
 	// }
 	// t.Execute(w, "Hello")
-	GenerateHTML(w, "HeLLo", "layout", "navbar", "top")
+	GenerateHTML(w, "HeLLo", "layout", "public_navbar", "top")
 }
