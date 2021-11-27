@@ -98,4 +98,10 @@ func CreateSession(session Session, err error) {
 		email, 
 		user_id, 
 		created_at) values (?, ?, ?, ?)`
+
+	_, err := Db.Exec(cmd1, createUUID(), u.Email, u.ID, time.Now())
+	if err != nil {
+		log.Println(err)
+	}
+
 }
