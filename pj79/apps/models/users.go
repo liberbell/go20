@@ -90,3 +90,12 @@ func GetUserByEmail(email string) (user User, err error) {
 
 	return user, err
 }
+
+func CreateSession(session Session, err error) {
+	session = Session{}
+	cmd1 := `INSERT INTO sessions (
+		uuid,
+		email, 
+		user_id, 
+		created_at) values (?, ?, ?, ?)`
+}
