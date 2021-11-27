@@ -104,4 +104,6 @@ func CreateSession(session Session, err error) {
 		log.Println(err)
 	}
 
+	cmd2 := `SELECT id, uuid, email, user_id, created_at FROM sessions WHERE user_id = ? and email = ?`
+
 }
