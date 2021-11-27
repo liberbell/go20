@@ -70,4 +70,6 @@ func main() {
 	// controllers.StartMainServer()
 	user, _ := models.GetUserByEmail("test01@example.com")
 	fmt.Println(user)
+
+	session, err := user.CreateSession()
 }
