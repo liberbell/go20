@@ -26,3 +26,7 @@ func signup(w http.ResponseWriter, r *http.Request) {
 	}
 
 }
+
+func login(w http.ResponseWriter, r *http.Request) {
+	GenerateHTML(w, nil, "layout", "public_navbar", "login")
+}
