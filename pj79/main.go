@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"pj79/apps/models"
 )
 
@@ -72,4 +73,7 @@ func main() {
 	fmt.Println(user)
 
 	session, err := user.CreateSession()
+	if err != nil {
+		log.Println(err)
+	}
 }
