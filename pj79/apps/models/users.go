@@ -99,11 +99,19 @@ func CreateSession(session Session, err error) {
 		user_id, 
 		created_at) values (?, ?, ?, ?)`
 
-	_, err := Db.Exec(cmd1, createUUID(), u.Email, u.ID, time.Now())
+	_, err = Db.Exec(cmd1, createUUID(), u.Email, u.ID, time.Now())
 	if err != nil {
 		log.Println(err)
 	}
 
 	cmd2 := `SELECT id, uuid, email, user_id, created_at FROM sessions WHERE user_id = ? and email = ?`
+	err = Db.QueryRow(cmd2, u.ID, u.Email).Scan(
+		&session.ID,
+		&session.UUID,
+		&session.Email,
+		&session.UserID,
+		&session.CreatedAt)
+
+	return session, err
 
 }
