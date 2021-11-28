@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"log"
+	"pj79/apps/controllers"
 	"pj79/apps/models"
 )
 
@@ -69,15 +69,16 @@ func main() {
 	// t.DeleteTodo()
 
 	// controllers.StartMainServer()
-	user, _ := models.GetUserByEmail("test01@example.com")
-	fmt.Println(user)
+	// user, _ := models.GetUserByEmail("test01@example.com")
+	// fmt.Println(user)
 
-	session, err := user.CreateSession()
-	if err != nil {
-		log.Println(err)
-	}
-	fmt.Println(session)
+	// session, err := user.CreateSession()
+	// if err != nil {
+	// 	log.Println(err)
+	// }
+	// fmt.Println(session)
 
-	valid, _ := session.CheckSession()
-	fmt.Println(valid)
+	// valid, _ := session.CheckSession()
+	// fmt.Println(valid)
+	controllers.StartMainServer()
 }
