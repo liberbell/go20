@@ -47,7 +47,7 @@ func init() {
 
 	cmdS := fmt.Sprintf(`CREATE TABLE IF NOT EXISTS %s(
 		id INTEGER PRIMARY KEY AUTOINCREMENT,
-		uid STRING NOT NULL UNIQUE,
+		uuid STRING NOT NULL UNIQUE,
 		email STRING,
 		user_id INTEGER,
 		created_at DATETIME)`, tableNameSession)
