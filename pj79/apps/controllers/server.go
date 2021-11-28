@@ -34,5 +34,9 @@ func session(w http.ResponseWriter, r *http.Request) (sess models.Session, err e
 	cookie, err := r.Cookie("_cookie")
 	if err != nil {
 		sess = models.Session{UUID: cookie.Value}
+		if ok, _ := sess.CheckSession(); !ok {
+			fmt.Errorf("Invalid session")
+		}
 	}
+	return sess, err
 }
