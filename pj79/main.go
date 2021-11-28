@@ -69,8 +69,8 @@ func main() {
 	// t.DeleteTodo()
 
 	controllers.StartMainServer()
-	// user, _ := models.GetUserByEmail("test01@example.com")
-	// fmt.Println(user)
+	user, _ := models.GetUserByEmail("test01@example.com")
+	fmt.Println(user)
 
 	// session, err := user.CreateSession()
 	// if err != nil {
