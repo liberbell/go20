@@ -10,7 +10,12 @@ func top(w http.ResponseWriter, r *http.Request) {
 	// 	log.Fatalln(err)
 	// }
 	// t.Execute(w, "Hello")
-	GenerateHTML(w, "HeLLo", "layout", "public_navbar", "top")
+	_, err := session(w, r)
+	if err != nil {
+		GenerateHTML(w, "HeLLo", "layout", "public_navbar", "top")
+	} else {
+		http.Redirect(w, r, "/todos", 302)
+	}
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
