@@ -14,5 +14,10 @@ func top(w http.ResponseWriter, r *http.Request) {
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
-	sess, err := session(w, r)
+	_, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/", 302)
+	} else {
+		GenerateHTML(w, nil, "layout", "index", "private_navbar")
+	}
 }
