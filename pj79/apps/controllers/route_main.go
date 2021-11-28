@@ -12,3 +12,7 @@ func top(w http.ResponseWriter, r *http.Request) {
 	// t.Execute(w, "Hello")
 	GenerateHTML(w, "HeLLo", "layout", "public_navbar", "top")
 }
+
+func index(w http.ResponseWriter, r *http.Request) {
+	sess, err := session(w, r)
+}
