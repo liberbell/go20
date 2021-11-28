@@ -38,4 +38,17 @@ func authenticate(w http.ResponseWriter, r *http.Request) {
 		log.Println(err)
 		http.Redirect(w, r, "/login", 302)
 	}
+	if user.Password == models.Encrypt(r.PostFormValue(password)) {
+		session, err := user.CreateSession()
+		if err != nil {
+			log.Println(err)
+		}
+		cockie := http.Cookie{
+			Name:     "_cookie",
+			Value:    session.UUID,
+			HttpOnly: true,
+		}
+		http.SetCookie(w, &cockie)
+		http.Redirect(w, r, "/", 302)
+	}
 }
