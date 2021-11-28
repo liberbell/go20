@@ -126,5 +126,10 @@ func (sess *Session) CheckSession() (valid bool, err error) {
 
 	if err != nil {
 		valid = false
+		return
 	}
+	if sess.ID != 0 {
+		valid = true
+	}
+	return valid, err
 }
