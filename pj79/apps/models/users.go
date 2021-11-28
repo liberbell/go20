@@ -91,7 +91,7 @@ func GetUserByEmail(email string) (user User, err error) {
 	return user, err
 }
 
-func CreateSession(session Session, err error) {
+func (u *User) CreateSession(session Session, err error) {
 	session = Session{}
 	cmd1 := `INSERT INTO sessions (
 		uuid,
