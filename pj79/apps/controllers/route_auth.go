@@ -30,3 +30,12 @@ func signup(w http.ResponseWriter, r *http.Request) {
 func login(w http.ResponseWriter, r *http.Request) {
 	GenerateHTML(w, nil, "layout", "public_navbar", "login")
 }
+
+func authenticate(w http.ResponseWriter, r *http.Request) {
+	err := r.ParseForm()
+	user, err := models.GetUserByEmail(r.PostFormValue("email"))
+	if err != nil {
+		log.Println(err)
+		http.Redirect(w, r, "/login", 302)
+	}
+}
