@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"html/template"
 	"net/http"
+	"pj79/apps/models"
 	"pj79/config"
 )
 
@@ -27,4 +28,11 @@ func StartMainServer() error {
 	http.HandleFunc("/login", login)
 	http.HandleFunc("/authenticate", authenticate)
 	return http.ListenAndServe(":"+config.Config.Port, nil)
+}
+
+func session(w http.ResponseWriter, r *http.Request) (sess models.Session, err error) {
+	cookie, err := r.Cookie("_cookie")
+	if err != nil {
+		sess = models.Session{UUID: cookie.Value}
+	}
 }
