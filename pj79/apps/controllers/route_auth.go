@@ -8,7 +8,13 @@ import (
 
 func signup(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "GET" {
-		GenerateHTML(w, nil, "layout", "public_navbar", "signup")
+		_, err := session(w, r)
+		if err != nil {
+			GenerateHTML(w, nil, "layout", "public_navbar", "signup")
+		} else {
+			http.Redirect(w, r, "todos", 302)
+		}
+
 	} else if r.Method == "POST" {
 		err := r.ParseForm()
 		if err != nil {
