@@ -12,7 +12,7 @@ func signup(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			GenerateHTML(w, nil, "layout", "public_navbar", "signup")
 		} else {
-			http.Redirect(w, r, "todos", 302)
+			http.Redirect(w, r, "/todos", 302)
 		}
 
 	} else if r.Method == "POST" {
