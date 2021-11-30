@@ -29,7 +29,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 			log.Println(err)
 		}
 		todos, _ := user.GetTodosByUser()
-		user.todos = todos
+		user.Todos = todos
 
 		GenerateHTML(w, user, "layout", "index", "private_navbar")
 	}
