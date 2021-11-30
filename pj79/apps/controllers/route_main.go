@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"log"
 	"net/http"
 )
 
@@ -23,6 +24,12 @@ func index(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		http.Redirect(w, r, "/", 302)
 	} else {
+		user, err := sess.GetUserBySession()
+		if err != nil {
+			log.Println(err)
+		}
+		todos, _ := user.GetTodosByUser()
+
 		GenerateHTML(w, nil, "layout", "index", "private_navbar")
 	}
 }
