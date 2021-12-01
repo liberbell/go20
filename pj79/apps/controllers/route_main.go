@@ -66,3 +66,10 @@ func todoSave(w http.ResponseWriter, r *http.Request) {
 		http.Redirect(w, r, "/todos", 302)
 	}
 }
+
+func todoEdit(w http.ResponseWriter, r *http.Request, id int) {
+	sess, err := Session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", 302)
+	}
+}
