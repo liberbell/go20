@@ -54,5 +54,15 @@ func todoSave(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			fmt.Println(err)
 		}
+		user, err := sess.GetUserBySession()
+		if err != nil {
+			log.Println(err)
+		}
+		content := r.PostFormValue("content")
+		if err := user.CreateTodos(content); err != nil {
+			log.Println(err)
+		}
+
+		http.Redirect(w, r, "/todos", 302)
 	}
 }
