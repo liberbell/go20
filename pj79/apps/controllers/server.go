@@ -7,6 +7,7 @@ import (
 	"pj79/apps/models"
 	"pj79/config"
 	"regexp"
+	"strconv"
 )
 
 func GenerateHTML(w http.ResponseWriter, data interface{}, filenames ...string) {
@@ -52,6 +53,11 @@ func parseURL(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc
 	return func(rw http.ResponseWriter, r *http.Request) {
 		q := validPath.FindStringSubmatch(r.URL.Path)
 		if q == nil {
+			http.NotFound(rw, r)
+			return
+		}
+		qi, err := strconv.Atoi(q[2])
+		if err != nil {
 			http.NotFound(rw, r)
 			return
 		}
