@@ -81,6 +81,6 @@ func todoEdit(w http.ResponseWriter, r *http.Request, id int) {
 		if err != nil {
 			log.Println(err)
 		}
-		GenerateHTML(w, t, "layout", "private_navbar")
+		GenerateHTML(w, t, "layout", "private_navbar", "todo_edit")
 	}
 }
