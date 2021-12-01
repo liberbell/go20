@@ -61,5 +61,6 @@ func parseURL(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc
 			http.NotFound(rw, r)
 			return
 		}
+		fn(rw, r, qi)
 	}
 }
