@@ -43,3 +43,10 @@ func todoNew(w http.ResponseWriter, r *http.Request) {
 		GenerateHTML(w, nil, "layout", "private_navbar", "todo_new")
 	}
 }
+
+func todoSave(w http.ResponseWriter, r *http.Request) {
+	sess, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", 302)
+	}
+}
