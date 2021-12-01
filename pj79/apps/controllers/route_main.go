@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 )
@@ -48,5 +49,10 @@ func todoSave(w http.ResponseWriter, r *http.Request) {
 	sess, err := session(w, r)
 	if err != nil {
 		http.Redirect(w, r, "/login", 302)
+	} else {
+		err = r.ParseForm()
+		if err != nil {
+			fmt.Println(err)
+		}
 	}
 }
