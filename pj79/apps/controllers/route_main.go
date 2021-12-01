@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"pj79/apps/models"
 )
 
 func top(w http.ResponseWriter, r *http.Request) {
@@ -71,5 +72,15 @@ func todoEdit(w http.ResponseWriter, r *http.Request, id int) {
 	sess, err := Session(w, r)
 	if err != nil {
 		http.Redirect(w, r, "/login", 302)
+	} else {
+		_, err := sess.GetUserBySession()
+		if err != nil {
+			log.Println(err)
+		}
+		t, err := models.GetTodo(id)
+		if err != nil {
+			log.Println(err)
+		}
+		GenerateHTML(w, t, "layout", "private_navbar")
 	}
 }
