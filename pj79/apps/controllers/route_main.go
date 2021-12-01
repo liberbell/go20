@@ -34,3 +34,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 		GenerateHTML(w, user, "layout", "index", "private_navbar")
 	}
 }
+
+func todoNew(w http.ResponseWriter, r *http.Request) {
+	_, err := session(w, r)
+}
