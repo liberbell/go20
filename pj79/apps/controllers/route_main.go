@@ -89,5 +89,14 @@ func todoUpdate(w http.ResponseWriter, r *http.Request, id int) {
 	sess, err := session(w, r)
 	if err != nil {
 		http.Redirect(w, r, "/login", 302)
+	} else {
+		err := r.ParseForm()
+		if err != nil {
+			log.Println(err)
+		}
+		user, err := sess.GetUserBySession()
+		if err != nil {
+			log.Println(err)
+		}
 	}
 }
