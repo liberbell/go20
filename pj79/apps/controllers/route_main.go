@@ -115,5 +115,13 @@ func todoDelete(w http.ResponseWriter, r *http.Request, id int)  {
 		_, err := sess.GetUserBySession(); err != nil {
 			log.Println(err)
 		}
+		t, err := models.GetTodo(id)
+		if err != nil {
+			log.Println(err)
+		}
+		if err := t.DeleteTodo(); err != nil {
+			log.Println(err)
+		}
+		http.Redirect(w, r, "/todos", 302)
 	}
 }
