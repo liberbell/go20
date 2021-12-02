@@ -98,5 +98,7 @@ func todoUpdate(w http.ResponseWriter, r *http.Request, id int) {
 		if err != nil {
 			log.Println(err)
 		}
+		content := r.PostFormValue("content")
+		t := &models.Todo{ID: id, Content: content, UserID: user.id}
 	}
 }
