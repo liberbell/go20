@@ -108,5 +108,12 @@ func todoUpdate(w http.ResponseWriter, r *http.Request, id int) {
 }
 
 func todoDelete(w http.ResponseWriter, r *http.Request, id int)  {
-	
+	sess, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", 302)
+	} else {
+		_, err := sess.GetUserBySession(); err != nil {
+			log.Println(err)
+		}
+	}
 }
