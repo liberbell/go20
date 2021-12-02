@@ -106,3 +106,7 @@ func todoUpdate(w http.ResponseWriter, r *http.Request, id int) {
 		http.Redirect(w, r, "/todos", 302)
 	}
 }
+
+func todoDelete(w http.ResponseWriter, r *http.Request, id int)  {
+	
+}
