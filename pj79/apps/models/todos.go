@@ -19,7 +19,7 @@ func (u *User) CreateTodos(content string) (err error) {
 	cmd := fmt.Sprintf(`INSERT INTO todos (
 		content,
 		user_id,
-		created_at) VALUES (?, ?, ?)`)
+		created_at) VALUES ($1, $2, $3)`)
 
 	_, err = Db.Exec(cmd, content, u.ID, time.Now())
 	if err != nil {
