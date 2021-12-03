@@ -101,7 +101,7 @@ func todoUpdate(w http.ResponseWriter, r *http.Request, id int) {
 		content := r.PostFormValue("content")
 		t := &models.Todo{ID: id, Content: content, UserID: user.ID}
 		if err := t.UpdateTodo(); err != nil {
-			log.Println(err)d
+			log.Println(err)
 		}
 		http.Redirect(w, r, "/todos", 302)
 	}
