@@ -4,8 +4,10 @@ import (
 	"crypto/sha1"
 	"database/sql"
 	"fmt"
+	"os"
 
 	"github.com/google/uuid"
+	"github.com/lib/pq"
 	// _ "github.com/mattn/go-sqlite3"
 )
 
@@ -20,6 +22,8 @@ const (
 )
 
 func init() {
+	url := os.Getenv("DATABASE_URL")
+	connection, _ := pq.ParseURL(url)
 	// Db, err = sql.Open(config.Config.SQLDriver, config.Config.DbName)
 	// if err != nil {
 	// 	log.Fatalln(err)
