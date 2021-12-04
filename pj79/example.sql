@@ -16,4 +16,12 @@ create table todos (
     content text,
     user_id integer references users(id),
     created_at timestamp not null 
+);
+
+create table sessions (
+    id serial primary key,
+    uuid varchar(255) not null unique,
+    email varchar(255),
+    user_id integer references users(id),
+    created_at timestamp not null
 )
