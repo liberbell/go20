@@ -10,3 +10,10 @@ create table users (
     password varchar(255) not null,
     created_at timestamp not null
 );
+
+create table todos (
+    id serial primary key,
+    content text,
+    user_id integer references users(id),
+    created_at timestamp not null 
+)
