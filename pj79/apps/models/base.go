@@ -4,7 +4,9 @@ import (
 	"crypto/sha1"
 	"database/sql"
 	"fmt"
+	"log"
 	"os"
+	"pj79/config"
 
 	"github.com/google/uuid"
 	"github.com/lib/pq"
@@ -15,17 +17,20 @@ var Db *sql.DB
 
 var err error
 
-const (
-	tableNameUser    = "users"
-	tableNameTodo    = "todos"
-	tableNameSession = "sessions"
-)
+// const (
+// 	tableNameUser    = "users"
+// 	tableNameTodo    = "todos"
+// 	tableNameSession = "sessions"
+// )
 
 func init() {
 	url := os.Getenv("DATABASE_URL")
 	connection, _ := pq.ParseURL(url)
 	connection += "sslmode=require"
-	Db, err := sql.Open()
+	Db, err := sql.Open(config.Config.SQLDriver, connection)
+	if err != nil {
+		log.Fatalln(err)
+	}
 	// Db, err = sql.Open(config.Config.SQLDriver, config.Config.DbName)
 	// if err != nil {
 	// 	log.Fatalln(err)
