@@ -64,7 +64,7 @@ func GetTodos() (todos []Todo, err error) {
 }
 
 func (u *User) GetTodosByUser() (todos []Todo, err error) {
-	cmd := `SELECT id, content, user_id, created_at FROM todos WHERE user_id = ?`
+	cmd := `SELECT id, content, user_id, created_at FROM todos WHERE user_id = $1`
 	rows, err := Db.Query(cmd, u.ID)
 	if err != nil {
 		log.Fatalln(err)
@@ -85,7 +85,7 @@ func (u *User) GetTodosByUser() (todos []Todo, err error) {
 }
 
 func (t *Todo) UpdateTodo() error {
-	cmd := `UPDATE todos SET content = ?, user_id = ? WHERE id = ?`
+	cmd := `UPDATE todos SET content = ?, user_id = ? WHERE id = $1`
 	_, err := Db.Exec(cmd, t.Content, t.UserID, t.ID)
 	if err != nil {
 		log.Fatalln(err)
