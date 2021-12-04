@@ -94,7 +94,7 @@ func (t *Todo) UpdateTodo() error {
 }
 
 func (t *Todo) DeleteTodo() error {
-	cmd := `DELETE FROM todos WHERE id = ?`
+	cmd := `DELETE FROM todos WHERE id = $1`
 	_, err := Db.Exec(cmd, t.ID)
 	if err != nil {
 		log.Fatalln(err)
