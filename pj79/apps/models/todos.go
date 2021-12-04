@@ -29,7 +29,7 @@ func (u *User) CreateTodos(content string) (err error) {
 }
 
 func GetTodo(id int) (todo Todo, err error) {
-	cmd := `SELECT id, content, user_id, created_at FROM todos WHERE ID = ?`
+	cmd := `SELECT id, content, user_id, created_at FROM todos WHERE ID = $1`
 
 	todo = Todo{}
 
